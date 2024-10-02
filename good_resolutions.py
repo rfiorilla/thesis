@@ -6,7 +6,6 @@ def percentage(perc):
 	print(f"\tCompleted: {perc:.2f}%", end="\r")
 
 def input(dmns):
-
 	with open("input.csv", "r") as f_in:
 		csvreader = csv.reader(f_in)
 		for row in csvreader:
@@ -27,11 +26,12 @@ def output(dmns):
 			percentage(cnt / len(dmns) * 100)
 
 def main():
-
+	print(f"\tCreating a list of trusted resolutions (DNS resolvers: 8.8.8.8, 8.8.4.4)...")
 	domains = []
 	input(domains)
 	output(domains)
-	print(f"\tOperation completed!")
+	print(f"\tCompleted: 100.00%")
+	print(f"\tList of trusted resolutions created -> ./output_good.csv")
 
 if __name__ == "__main__":
     	main()
