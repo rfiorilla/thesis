@@ -47,7 +47,7 @@ def certificate_check():
 		csv.writer(f_out).writerow(["Domain", "Untrusted Certificate", "Mismatched Name"])
 		next(r_in)
 		for row in r_in:
-			result = subprocess.Popen("openssl s_client -showcerts -connect google.com:443", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+			result = subprocess.Popen("openssl s_client -showcerts -connect" + " " + row[0] + ":443", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
 			stdout, stderr = result.communicate(input=b'Q\n')
 			print(stdout.decode())
 			if stdout.decode().find("Verification: OK") != -1:
