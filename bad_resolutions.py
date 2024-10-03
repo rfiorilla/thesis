@@ -92,7 +92,10 @@ def main():
 	#print(f"\tComparing good and bad resolutions...")
 	#mismatched_resolutions = comparison()
 	#print(f"\tList of mismatched resolutions created -> ./mismatched_resolutions.csv")
+	print(f"\tAnalyzing the certificates of websites with mismatched resolutions...")
 	certificate_check(49)
+	print(f"\tCompleted: 100.00%")
+	print(f"\tList of suspicious certificates created -> ./certificates.csv")
 
 if __name__ == "__main__":
     	main()
