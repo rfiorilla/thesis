@@ -1,2 +1,10 @@
-Domain,Untrusted Certificate,Mismatched Name
-wikipedia.org,N,Y
+Domain,Untrusted Certificate,Mismatched Name,Certificate Subject
+azure.com,N,Y,gamedev.microsoft.com
+linkedin.com,N,Y,www.linkedin.cn
+googletagmanager.com,N,Y,*.google-analytics.com
+googlesyndication.com,N,Y,*.g.doubleclick.net
+goo.gl,N,Y,*.google.com
+windows.net,N,Y,*.oneroute.microsoft.com
+vimeo.com,N,Y,*.facebook.com
+whatsapp.com,N,Y,*.whatsapp.net
+skype.com,N,Y,videobreakdown.com

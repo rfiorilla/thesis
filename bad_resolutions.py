@@ -40,27 +40,46 @@ def comparison():
 				csv.writer(f_mism).writerow([row1[0], row1[1], row2[1]])
 				cnt += 1
 		print(f"\t{cnt} mismatched resolutions found.")
+	return cnt
 
-def certificate_check():
-	with open("provina.csv", "r") as f_in, open("certificates.csv", "w") as f_out:
+def certificate_check(mism_resol):
+	with open("mismatched_resolutions.csv", "r") as f_in, open("certificates.csv", "w") as f_out:
 		r_in = csv.reader(f_in)
-		csv.writer(f_out).writerow(["Domain", "Untrusted Certificate", "Mismatched Name"])
+		csv.writer(f_out).writerow(["Domain", "Untrusted Certificate", "Mismatched Name", "Certificate Subject"])
 		next(r_in)
+		cnt = 0
+		mism = 0
+		invalid_mism = 0
+		invalid = 0
 		for row in r_in:
-			result = subprocess.Popen("openssl s_client -showcerts -connect" + " " + row[0] + ":443", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
-			stdout, stderr = result.communicate(input=b'Q\n')
-			print(stdout.decode())
-			if stdout.decode().find("Verification: OK") != -1:
-				if stdout.decode().find(row[0]) == -1:
-					csv.writer(f_out).writerow([row[0], "N", "Y"])
-					print("ny")
-			else:
-				if stdout.decode().find(row[0]) == -1:
-					csv.writer(f_out).writerow([row[0], "Y", "Y"])
-					print("yy")
+			expiration = 0
+			try:
+				result = subprocess.Popen("openssl s_client -showcerts -connect" + " " + row[0] + ":443", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+				stdout, stderr = result.communicate(input=b'Q\n', timeout=3)
+			except subprocess.TimeoutExpired:
+				result.kill()
+				expiration = 1
+			#print(stdout.decode())
+			if expiration == 0:
+				subject = stdout.decode().splitlines()[3].split("CN")[-1].lstrip("=")
+				#print(subject)
+				if stdout.decode().find("Verification: OK") != -1:
+					if stdout.decode().find(row[0]) == -1:
+						csv.writer(f_out).writerow([row[0], "N", "Y", subject])
+						#print("ny")
+						mism += 1
 				else:
-					csv.writer(f_out).writerow([row[0], "Y", "N"])
-					print("yn")
+					if stdout.decode().find(row[0]) == -1:
+						csv.writer(f_out).writerow([row[0], "Y", "Y", subject])
+						#print("yy")
+						invalid_mism += 1
+					else:
+						csv.writer(f_out).writerow([row[0], "Y", "N", subject])
+						#print("yn")
+						invalid += 1
+			cnt += 1
+			percentage(cnt / mism_resol * 100)
+	print(f'\t{invalid + mism + invalid_mism} suspicious certificates found:\n\t{invalid} invalid certificates with matched name\n\t{mism} valid certificates with mismatched name\n\t{invalid_mism} invalid certificates with mismatched name')
 
 
 def main():
@@ -71,9 +90,9 @@ def main():
 	#print(f"\tCompleted: 100.00%")
 	#print(f"\tList of untrusted resolutions created -> ./output_bad.csv")
 	#print(f"\tComparing good and bad resolutions...")
-	#comparison()
+	#mismatched_resolutions = comparison()
 	#print(f"\tList of mismatched resolutions created -> ./mismatched_resolutions.csv")
-	certificate_check()
+	certificate_check(49)
 
 if __name__ == "__main__":
     	main()
