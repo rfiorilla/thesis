@@ -1,3 +1,5 @@
+import time
+import signal
 import subprocess
 import csv
 import sys
@@ -7,8 +9,8 @@ def percentage(perc):
 
 def input(dmns):
 	with open("input.csv", "r") as f_in:
-		csvreader = csv.reader(f_in)
-		for row in csvreader:
+		r_in = csv.reader(f_in)
+		for row in r_in:
 			dmns.append(row[1])
 
 def output(dmns):
@@ -39,6 +41,28 @@ def comparison():
 				cnt += 1
 		print(f"\t{cnt} mismatched resolutions found.")
 
+def certificate_check():
+	with open("provina.csv", "r") as f_in, open("certificates.csv", "w") as f_out:
+		r_in = csv.reader(f_in)
+		csv.writer(f_out).writerow(["Domain", "Untrusted Certificate", "Mismatched Name"])
+		next(r_in)
+		for row in r_in:
+			result = subprocess.Popen("openssl s_client -showcerts -connect google.com:443", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+			stdout, stderr = result.communicate(input=b'Q\n')
+			print(stdout.decode())
+			if stdout.decode().find("Verification: OK") != -1:
+				if stdout.decode().find(row[0]) == -1:
+					csv.writer(f_out).writerow([row[0], "N", "Y"])
+					print("ny")
+			else:
+				if stdout.decode().find(row[0]) == -1:
+					csv.writer(f_out).writerow([row[0], "Y", "Y"])
+					print("yy")
+				else:
+					csv.writer(f_out).writerow([row[0], "Y", "N"])
+					print("yn")
+
+
 def main():
 	#print(f"\tCreating a list of untrusted resolutions (DNS resolvers: 210.2.4.8, 180.76.76.76)...")
 	#domains = []
@@ -46,9 +70,10 @@ def main():
 	#output(domains)
 	#print(f"\tCompleted: 100.00%")
 	#print(f"\tList of untrusted resolutions created -> ./output_bad.csv")
-	print(f"\tComparing good and bad resolutions...")
-	comparison()
-	print(f"\tList of mismatched resolutions created -> ./mismatched_resolutions.csv")
+	#print(f"\tComparing good and bad resolutions...")
+	#comparison()
+	#print(f"\tList of mismatched resolutions created -> ./mismatched_resolutions.csv")
+	certificate_check()
 
 if __name__ == "__main__":
     	main()
