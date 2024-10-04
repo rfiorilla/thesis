@@ -91,7 +91,6 @@ def blockpage_score_calculator(page):
 	return score
 
 def csv_sorter(csv_file):
-	print(csv_file)
 	with open(csv_file, "r") as f_in:
 		r_in = csv.reader(f_in)
 		header = next(r_in)
@@ -104,7 +103,7 @@ def csv_sorter(csv_file):
 			i += 1
 
 def curler(certs):
-	with open("certificates.csv", "r") as f_in:, open("webpages.csv", "w") as f_out:
+	with open("certificates.csv", "r") as f_in, open("webpages.csv", "w") as f_out:
 		r_in = csv.reader(f_in)
 		next(r_in)
 		csv.writer(f_out).writerow(["Domain", "HTTP Status Code", "Blockpage Score"])
@@ -122,6 +121,8 @@ def curler(certs):
 				score = blockpage_score_calculator(stdout.decode(encoding='latin-1').split("\n\r\n")[-1])
 				status = stdout.decode(encoding='latin-1').split("\n\r\n")[-2].splitlines()[0].split()[1]
 				csv.writer(f_out).writerow([row[0], status, round(score, 2)])
+				with open ("webpages/" + row[0].split(".")[0] + ".html", "w") as html:
+					html.write(stdout.decode(encoding='latin-1').split("\n\r\n")[-1])
 				curled += 1
 			cnt += 1
 			percentage(cnt / certs * 100)
@@ -131,20 +132,21 @@ def curler(certs):
 
 
 def main():
-	#print(f"\tCreating a list of untrusted resolutions (DNS resolvers: 210.2.4.8, 180.76.76.76)...")
-	#domains = []
-	#input(domains)
-	#output(domains)
-	#print(f"\tList of untrusted resolutions created -> ./output_bad.csv")
-	#print(f"\tComparing good and bad resolutions...")
-	#mismatched_resolutions = comparison()
-	#print(f"\tList of mismatched resolutions created -> ./mismatched_resolutions.csv")
-	#print(f"\tAnalyzing the certificates of websites with mismatched resolutions...")
-	#certificate_check(49)
-	#print(f"\tList of suspicious certificates created -> ./certificates.csv")
+	print(f"\tCreating a list of untrusted resolutions (DNS resolvers: 210.2.4.8, 180.76.76.76)...")
+	domains = []
+	input(domains)
+	output(domains)
+	print(f"\tList of untrusted resolutions created -> ./output_bad.csv")
+	print(f"\tComparing good and bad resolutions...")
+	mismatched_resolutions = comparison()
+	print(f"\tList of mismatched resolutions created -> ./mismatched_resolutions.csv")
+	print(f"\tAnalyzing the certificates of websites with mismatched resolutions...")
+	suspicious_certificates = certificate_check(mismatched_resolutions)
+	print(f"\tList of suspicious certificates created -> ./certificates.csv")
 	print(f"\tObtaining web pages of suspicious websites...")
-	curler(9)
+	curler(suspicious_certificates)
 	print(f"\tList of possible censored websites generated -> ./webpages.csv")
+	print(f"\tWebpages' HTMLs collected -> ./webpages/")
 
 if __name__ == "__main__":
     	main()
