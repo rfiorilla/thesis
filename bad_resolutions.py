@@ -93,29 +93,43 @@ def blockpage_score_calculator(page):
 		score = tmp_score / (len(page) * len(page)) * 1000
 	return score
 
-def curler(certs):
-	with open("certificates.csv", "r") as f_in, open("webpages.csv", "w") as f_out:
+def csv_sorter(csv_file):
+	print(csv_file)
+	with open(csv_file, "r") as f_in:
 		r_in = csv.reader(f_in)
-		next(r_in)
-		csv.writer(f_out).writerow(["Domain", "HTTP Status Code", "Blockpage Score"])
-		cnt = 0
-		curled = 0
-		for row in r_in:
-			expiration = 0
-			try:
-				result = subprocess.Popen("curl https://" + row[0]  + " " + "-i -k -L", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
-				stdout, stderr = result.communicate(timeout=1)
-			except subprocess.TimeoutExpired:
-				result.kill()
-				expiration = 1
-			if (expiration != 1):
-				score = blockpage_score_calculator(stdout.decode(encoding='latin-1').split("\n\r\n")[-1])
-				status = stdout.decode(encoding='latin-1').split("\n\r\n")[-2].splitlines()[0].split()[1]
-				csv.writer(f_out).writerow([row[0], status, round(score, 2)])
-				curled += 1
-			cnt += 1
-			percentage(cnt / certs * 100)
-	print(f"\t{curled} pages retrieved.")
+		header = next(r_in)
+		sorted_rows = sorted(r_in, key=lambda row: row[2], reverse=True)
+	with open(csv_file, "w") as f_out:
+		csv.writer(f_out).writerow(header)
+		i = 0
+		for row in sorted_rows:
+			csv.writer(f_out).writerow([sorted_rows[i][0], sorted_rows[i][1], sorted_rows[i][2]])
+			i += 1
+
+def curler(certs):
+	#with open("certificates.csv", "r") as f_in, open("webpages.csv", "w") as f_out:
+	#	r_in = csv.reader(f_in)
+	#	next(r_in)
+		#csv.writer(f_out).writerow(["Domain", "HTTP Status Code", "Blockpage Score"])
+	#	cnt = 0
+	#	curled = 0
+		#for row in r_in:
+		#	expiration = 0
+		#	try:
+		#		result = subprocess.Popen("curl https://" + row[0]  + " " + "-i -k -L", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+		#		stdout, stderr = result.communicate(timeout=1)
+		#	except subprocess.TimeoutExpired:
+		#		result.kill()
+		#		expiration = 1
+		#	if (expiration != 1):
+		#		score = blockpage_score_calculator(stdout.decode(encoding='latin-1').split("\n\r\n")[-1])
+		#		status = stdout.decode(encoding='latin-1').split("\n\r\n")[-2].splitlines()[0].split()[1]
+		#		csv.writer(f_out).writerow([row[0], status, round(score, 2)])
+		#		curled += 1
+		#	cnt += 1
+			#percentage(cnt / certs * 100)
+	csv_sorter("webpages.csv")
+	#print(f"\t{curled} pages retrieved.")
 		#print(score)
 		#print(status)
 		#if (expiration != 1):
