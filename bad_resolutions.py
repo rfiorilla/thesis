@@ -80,6 +80,7 @@ def certificate_check(mism_resol):
 			cnt += 1
 			percentage(cnt / mism_resol * 100)
 	print(f'\t{invalid + mism + invalid_mism} suspicious certificates found:\n\t{invalid} invalid certificates with matched name\n\t{mism} valid certificates with mismatched name\n\t{invalid_mism} invalid certificates with mismatched name')
+	return invalid + mism + invalid_mism
 
 def blockpage_score_calculator(page):
 	with open("blockpage_typical_words.csv", "r") as f_in:
@@ -87,29 +88,36 @@ def blockpage_score_calculator(page):
 		next(r_in)
 		tmp_score = 0
 		for row in r_in:
-			if page.find(row[1]) != -1:
-				tmp_score += int(row[0])
-		score = tmp_score / len(page) * 1000000
+			if page.lower().find(row[1]) != -1:
+				tmp_score += (int(row[0]) * int(row[0]))
+		score = tmp_score / (len(page) * len(page)) * 1000
 	return score
 
-def curler():
+def curler(certs):
 	with open("certificates.csv", "r") as f_in, open("webpages.csv", "w") as f_out:
 		r_in = csv.reader(f_in)
 		next(r_in)
 		csv.writer(f_out).writerow(["Domain", "HTTP Status Code", "Blockpage Score"])
+		cnt = 0
+		curled = 0
 		for row in r_in:
 			expiration = 0
 			try:
-				result = subprocess.Popen("curl https://" + "google.com" + " " + "-i -k -L", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
-				stdout, stderr = result.communicate(timeout=0.5)
+				result = subprocess.Popen("curl https://" + "wikipedia.org" + " " + "-i -k -L", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+				stdout, stderr = result.communicate(timeout=1)
 			except subprocess.TimeoutExpired:
 				result.kill()
 				expiration = 1
 			if (expiration != 1):
 				score = blockpage_score_calculator(stdout.decode(encoding='latin-1').split("\n\r\n")[-1])
-				status = stdout.decode(encoding='latin-1').split("\n\r\n")[-2].split("\n\r")[0].split(" ")[-1]
-		print(score)
-		print(status)
+				status = stdout.decode(encoding='latin-1').split("\n\r\n")[-2].splitlines()[0].split()[1]
+				csv.writer(f_out).writerow([row[0], status, score])
+				curled += 1
+			cnt += 1
+			percentage(cnt / certs * 100)
+	print(f"\t{curled} pages retrieved.")
+		#print(score)
+		#print(status)
 		#if (expiration != 1):
 			#print(stdout.decode(encoding='latin-1').split("\n\r\n")[-1])
 
@@ -128,7 +136,7 @@ def main():
 	#certificate_check(49)
 	#print(f"\tCompleted: 100.00%")
 	#print(f"\tList of suspicious certificates created -> ./certificates.csv")
-	curler()
+	curler(9)
 
 if __name__ == "__main__":
     	main()
