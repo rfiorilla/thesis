@@ -26,6 +26,7 @@ def output(dmns):
 			csv.writer(f_out).writerow([d, ip])
 			cnt += 1
 			percentage(cnt / len(dmns) * 100)
+		print(f"\tCompleted: 100.00%")
 
 def comparison():
 	with open("output_good.csv", "r") as f_good, open("output_bad.csv", "r") as f_bad, open("mismatched_resolutions.csv", "w") as f_mism:
@@ -59,26 +60,22 @@ def certificate_check(mism_resol):
 			except subprocess.TimeoutExpired:
 				result.kill()
 				expiration = 1
-			#print(stdout.decode())
 			if expiration == 0:
 				subject = stdout.decode().splitlines()[3].split("CN")[-1].lstrip("=")
-				#print(subject)
 				if stdout.decode().find("Verification: OK") != -1:
 					if stdout.decode().find(row[0]) == -1:
 						csv.writer(f_out).writerow([row[0], "N", "Y", subject])
-						#print("ny")
 						mism += 1
 				else:
 					if stdout.decode().find(row[0]) == -1:
 						csv.writer(f_out).writerow([row[0], "Y", "Y", subject])
-						#print("yy")
 						invalid_mism += 1
 					else:
 						csv.writer(f_out).writerow([row[0], "Y", "N", subject])
-						#print("yn")
 						invalid += 1
 			cnt += 1
 			percentage(cnt / mism_resol * 100)
+	print(f"\tCompleted: 100.00%")
 	print(f'\t{invalid + mism + invalid_mism} suspicious certificates found:\n\t{invalid} invalid certificates with matched name\n\t{mism} valid certificates with mismatched name\n\t{invalid_mism} invalid certificates with mismatched name')
 	return invalid + mism + invalid_mism
 
@@ -107,33 +104,30 @@ def csv_sorter(csv_file):
 			i += 1
 
 def curler(certs):
-	#with open("certificates.csv", "r") as f_in, open("webpages.csv", "w") as f_out:
-	#	r_in = csv.reader(f_in)
-	#	next(r_in)
-		#csv.writer(f_out).writerow(["Domain", "HTTP Status Code", "Blockpage Score"])
-	#	cnt = 0
-	#	curled = 0
-		#for row in r_in:
-		#	expiration = 0
-		#	try:
-		#		result = subprocess.Popen("curl https://" + row[0]  + " " + "-i -k -L", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
-		#		stdout, stderr = result.communicate(timeout=1)
-		#	except subprocess.TimeoutExpired:
-		#		result.kill()
-		#		expiration = 1
-		#	if (expiration != 1):
-		#		score = blockpage_score_calculator(stdout.decode(encoding='latin-1').split("\n\r\n")[-1])
-		#		status = stdout.decode(encoding='latin-1').split("\n\r\n")[-2].splitlines()[0].split()[1]
-		#		csv.writer(f_out).writerow([row[0], status, round(score, 2)])
-		#		curled += 1
-		#	cnt += 1
-			#percentage(cnt / certs * 100)
+	with open("certificates.csv", "r") as f_in:, open("webpages.csv", "w") as f_out:
+		r_in = csv.reader(f_in)
+		next(r_in)
+		csv.writer(f_out).writerow(["Domain", "HTTP Status Code", "Blockpage Score"])
+		cnt = 0
+		curled = 0
+		for row in r_in:
+			expiration = 0
+			try:
+				result = subprocess.Popen("curl https://" + row[0]  + " " + "-i -k -L", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+				stdout, stderr = result.communicate(timeout=1)
+			except subprocess.TimeoutExpired:
+				result.kill()
+				expiration = 1
+			if (expiration != 1):
+				score = blockpage_score_calculator(stdout.decode(encoding='latin-1').split("\n\r\n")[-1])
+				status = stdout.decode(encoding='latin-1').split("\n\r\n")[-2].splitlines()[0].split()[1]
+				csv.writer(f_out).writerow([row[0], status, round(score, 2)])
+				curled += 1
+			cnt += 1
+			percentage(cnt / certs * 100)
+	print(f"\tCompleted: 100.00%")
 	csv_sorter("webpages.csv")
-	#print(f"\t{curled} pages retrieved.")
-		#print(score)
-		#print(status)
-		#if (expiration != 1):
-			#print(stdout.decode(encoding='latin-1').split("\n\r\n")[-1])
+	print(f"\t{curled} pages retrieved.")
 
 
 def main():
@@ -141,16 +135,16 @@ def main():
 	#domains = []
 	#input(domains)
 	#output(domains)
-	#print(f"\tCompleted: 100.00%")
 	#print(f"\tList of untrusted resolutions created -> ./output_bad.csv")
 	#print(f"\tComparing good and bad resolutions...")
 	#mismatched_resolutions = comparison()
 	#print(f"\tList of mismatched resolutions created -> ./mismatched_resolutions.csv")
 	#print(f"\tAnalyzing the certificates of websites with mismatched resolutions...")
 	#certificate_check(49)
-	#print(f"\tCompleted: 100.00%")
 	#print(f"\tList of suspicious certificates created -> ./certificates.csv")
+	print(f"\tObtaining web pages of suspicious websites...")
 	curler(9)
+	print(f"\tList of possible censored websites generated -> ./webpages.csv")
 
 if __name__ == "__main__":
     	main()
