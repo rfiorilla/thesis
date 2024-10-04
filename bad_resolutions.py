@@ -103,7 +103,7 @@ def curler(certs):
 		for row in r_in:
 			expiration = 0
 			try:
-				result = subprocess.Popen("curl https://" + "wikipedia.org" + " " + "-i -k -L", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+				result = subprocess.Popen("curl https://" + row[0]  + " " + "-i -k -L", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
 				stdout, stderr = result.communicate(timeout=1)
 			except subprocess.TimeoutExpired:
 				result.kill()
@@ -111,7 +111,7 @@ def curler(certs):
 			if (expiration != 1):
 				score = blockpage_score_calculator(stdout.decode(encoding='latin-1').split("\n\r\n")[-1])
 				status = stdout.decode(encoding='latin-1').split("\n\r\n")[-2].splitlines()[0].split()[1]
-				csv.writer(f_out).writerow([row[0], status, score])
+				csv.writer(f_out).writerow([row[0], status, round(score, 2)])
 				curled += 1
 			cnt += 1
 			percentage(cnt / certs * 100)
