@@ -15,7 +15,7 @@ def input(dmns):
 
 def output(dmns):
 	with open("output_bad.csv", "w") as f_out:
-		csv.writer(f_out).writerow(['Domain', 'IP Address'])
+		csv.writer(f_out).writerow(["Domain", "IP Address"])
 		cnt = 0
 		for d in dmns:
 			result = subprocess.run("nslookup" + " " + d, shell=True, capture_output=True, text=True)
@@ -31,7 +31,7 @@ def comparison():
 	with open("output_good.csv", "r") as f_good, open("output_bad.csv", "r") as f_bad, open("mismatched_resolutions.csv", "w") as f_mism:
 		r_good = csv.reader(f_good)
 		r_bad = csv.reader(f_bad)
-		csv.writer(f_mism).writerow(['Domain', 'Good IP Address', 'Bad IP Address'])
+		csv.writer(f_mism).writerow(["Domain", "Good IP Address", "Bad IP Address"])
 		next(r_good)
 		next(r_bad)
 		cnt = 0
@@ -81,6 +81,38 @@ def certificate_check(mism_resol):
 			percentage(cnt / mism_resol * 100)
 	print(f'\t{invalid + mism + invalid_mism} suspicious certificates found:\n\t{invalid} invalid certificates with matched name\n\t{mism} valid certificates with mismatched name\n\t{invalid_mism} invalid certificates with mismatched name')
 
+def blockpage_score_calculator(page):
+	with open("blockpage_typical_words.csv", "r") as f_in:
+		r_in = csv.reader(f_in)
+		next(r_in)
+		tmp_score = 0
+		for row in r_in:
+			if page.find(row[1]) != -1:
+				tmp_score += int(row[0])
+		score = tmp_score / len(page) * 1000000
+	return score
+
+def curler():
+	with open("certificates.csv", "r") as f_in, open("webpages.csv", "w") as f_out:
+		r_in = csv.reader(f_in)
+		next(r_in)
+		csv.writer(f_out).writerow(["Domain", "HTTP Status Code", "Blockpage Score"])
+		for row in r_in:
+			expiration = 0
+			try:
+				result = subprocess.Popen("curl https://" + "google.com" + " " + "-i -k -L", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+				stdout, stderr = result.communicate(timeout=0.5)
+			except subprocess.TimeoutExpired:
+				result.kill()
+				expiration = 1
+			if (expiration != 1):
+				score = blockpage_score_calculator(stdout.decode(encoding='latin-1').split("\n\r\n")[-1])
+				status = stdout.decode(encoding='latin-1').split("\n\r\n")[-2].split("\n\r")[0].split(" ")[-1]
+		print(score)
+		print(status)
+		#if (expiration != 1):
+			#print(stdout.decode(encoding='latin-1').split("\n\r\n")[-1])
+
 
 def main():
 	#print(f"\tCreating a list of untrusted resolutions (DNS resolvers: 210.2.4.8, 180.76.76.76)...")
@@ -92,10 +124,11 @@ def main():
 	#print(f"\tComparing good and bad resolutions...")
 	#mismatched_resolutions = comparison()
 	#print(f"\tList of mismatched resolutions created -> ./mismatched_resolutions.csv")
-	print(f"\tAnalyzing the certificates of websites with mismatched resolutions...")
-	certificate_check(49)
-	print(f"\tCompleted: 100.00%")
-	print(f"\tList of suspicious certificates created -> ./certificates.csv")
+	#print(f"\tAnalyzing the certificates of websites with mismatched resolutions...")
+	#certificate_check(49)
+	#print(f"\tCompleted: 100.00%")
+	#print(f"\tList of suspicious certificates created -> ./certificates.csv")
+	curler()
 
 if __name__ == "__main__":
     	main()
