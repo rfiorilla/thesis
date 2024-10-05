@@ -148,7 +148,7 @@ def main():
 	suspicious_certificates = certificate_check(mismatched_resolutions)
 	print(f"\tList of suspicious certificates created -> ./certificates.csv")
 	print(f"\tObtaining web pages of suspicious websites...")
-	curler(16)
+	curler(suspicious_certificates)
 	print(f"\tList of possible censored websites generated -> ./webpages.csv")
 	print(f"\tWebpages' HTMLs collected -> ./webpages/")
 
