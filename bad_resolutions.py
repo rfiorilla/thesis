@@ -87,14 +87,17 @@ def blockpage_score_calculator(page):
 		for row in r_in:
 			if page.lower().find(row[1]) != -1:
 				tmp_score += (int(row[0]) * int(row[0]))
-		score = tmp_score / (len(page) * len(page)) * 1000
+		if len(page) > 0:
+			score = tmp_score / (len(page) * len(page)) * 1000
+		else:
+			score = 0
 	return score
 
 def csv_sorter(csv_file):
 	with open(csv_file, "r") as f_in:
 		r_in = csv.reader(f_in)
 		header = next(r_in)
-		sorted_rows = sorted(r_in, key=lambda row: row[2], reverse=True)
+		sorted_rows = sorted(r_in, key=lambda row: float(row[2]), reverse=True)
 	with open(csv_file, "w") as f_out:
 		csv.writer(f_out).writerow(header)
 		i = 0
@@ -109,11 +112,12 @@ def curler(certs):
 		csv.writer(f_out).writerow(["Domain", "HTTP Status Code", "Blockpage Score"])
 		cnt = 0
 		curled = 0
+		subprocess.run("rm -rf webpages/*", shell=True, capture_output=True, text=True)
 		for row in r_in:
 			expiration = 0
 			try:
 				result = subprocess.Popen("curl https://" + row[0]  + " " + "-i -k -L", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
-				stdout, stderr = result.communicate(timeout=1)
+				stdout, stderr = result.communicate(timeout=2)
 			except subprocess.TimeoutExpired:
 				result.kill()
 				expiration = 1
@@ -132,7 +136,7 @@ def curler(certs):
 
 
 def main():
-	print(f"\tCreating a list of untrusted resolutions (DNS resolvers: 210.2.4.8, 180.76.76.76)...")
+	print(f"\tCreating a list of untrusted resolutions (DNS resolver: 123.123.123.123)...")
 	domains = []
 	input(domains)
 	output(domains)
@@ -144,11 +148,10 @@ def main():
 	suspicious_certificates = certificate_check(mismatched_resolutions)
 	print(f"\tList of suspicious certificates created -> ./certificates.csv")
 	print(f"\tObtaining web pages of suspicious websites...")
-	curler(suspicious_certificates)
+	curler(16)
 	print(f"\tList of possible censored websites generated -> ./webpages.csv")
 	print(f"\tWebpages' HTMLs collected -> ./webpages/")
 
 if __name__ == "__main__":
     	main()
-
 

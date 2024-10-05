@@ -1,8 +1,10 @@
 Domain,HTTP Status Code,Blockpage Score
 googletagmanager.com,404,13.36
-googlesyndication.com,200,0.12
-goo.gl,200,0.01
+twitter.com,400,11.33
+wikipedia.org,400,11.33
+googlesyndication.com,400,11.33
+youtu.be,400,11.33
+vimeo.com,400,11.33
+amazon.com,503,5.43
+baidu.com,200,2.27
 skype.com,200,0.01
-linkedin.com,200,0.0
-vimeo.com,200,0.0
-whatsapp.com,200,0.0

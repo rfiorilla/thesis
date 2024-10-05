@@ -1,10 +1,17 @@
 Domain,Untrusted Certificate,Mismatched Name,Certificate Subject
 azure.com,N,Y,gamedev.microsoft.com
+twitter.com,N,Y,---
 linkedin.com,N,Y,www.linkedin.cn
 googletagmanager.com,N,Y,*.google-analytics.com
+amazon.com,N,Y,*.peg.a2z.com
+wikipedia.org,N,Y,*.facebook.com
 googlesyndication.com,N,Y,*.g.doubleclick.net
+youtu.be,N,Y,*.google.com
+pinterest.com,N,Y,*.facebook.com
 goo.gl,N,Y,*.google.com
 windows.net,N,Y,*.oneroute.microsoft.com
-vimeo.com,N,Y,*.facebook.com
+vimeo.com,N,Y,*.instagram.com
 whatsapp.com,N,Y,*.whatsapp.net
 skype.com,N,Y,videobreakdown.com
+office365.com,N,Y,akaoffice.trafficmanager.net
+baidu.com,N,Y,www.baidu.cn
