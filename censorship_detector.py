@@ -13,7 +13,7 @@ def input(dmns):
 		for row in r_in:
 			dmns.append(row[1])
 
-def output(dmns):
+def bad_resolutions(dmns):
 	with open("output_bad.csv", "w") as f_out:
 		csv.writer(f_out).writerow(["Domain", "IP Address"])
 		cnt = 0
@@ -139,7 +139,7 @@ def main():
 	print(f"\tCreating a list of untrusted resolutions (DNS resolver: 123.123.123.123)...")
 	domains = []
 	input(domains)
-	output(domains)
+	bad_resolutions(domains)
 	print(f"\tList of untrusted resolutions created -> ./output_bad.csv")
 	print(f"\tComparing good and bad resolutions...")
 	mismatched_resolutions = comparison()
