@@ -1,11 +1,9 @@
-### Thesis Tool
+# Thesis Tool (***DOCUMENTATION STILL TO BE WRITTEN!***)
 
-**DOCUMENTATION STILL TO BE WRITTEN!**
+* Set the machine DNS resolvers to some trusted ones (e.g., 8.8.8.8).
 
-Set the machine DNS resolvers to some trusted ones (e.g., 8.8.8.8).
+* Run `good_resolutions.py`.
 
-Run `good_resolutions.py`.
+* Set the machine DNS resolvers to the ones to be verified.
 
-Set the machine DNS resolvers to the ones to be verified.
-
-Run `censorship_detector.py`.
+* Run `censorship_detector.py`.
