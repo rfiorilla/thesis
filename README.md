@@ -34,4 +34,6 @@ To execute the tool in the correct way:
 
 * `webpages.csv` is generated after trying to establish an HTTP connection with the websites that displayed suspicious certificates (invalid or with mismatched names); it contains the HTTP status code returned by the website, along with a score that indicates how likely it is for the obtained page to be a blockpage.
 
-* `/webpages` is a directory filled with the HTMLs of the retrieved webpages, with the purpose of visually verifying whether a specific domain was actually hidden by means of a blockpage or not. 
+* `/webpages` is a directory filled with the HTMLs of the retrieved webpages, with the purpose of visually verifying whether a specific domain was actually hidden by means of a blockpage or not.
+
+![diagram](/img/diagram.png)
