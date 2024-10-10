@@ -2,7 +2,7 @@
 
 This tool allows to identify when a specific DNS resolver censors some domains by means of DNS response manipulation. This kind of censorship is typically employed by redirecting users to a blockpage as soon as they are trying to reach a website hidden by the authority owning the resolver.
 
-The tool is based on a "control vs. test" philosophy, so its workflow is split into two phases: the first one consists of creating a trusted list of resolutions using a legit DNS resolver, such as Google (8.8.8.8) or Cloudflare (1.1.1.1), while in the second one the actual analysis of the responses provided by the suspicious resolver is performed.
+The tool is based on a "test vs. control" philosophy, so its workflow is split into two phases: the first one consists of creating a trusted list of resolutions using a legit DNS resolver, such as Google (8.8.8.8) or Cloudflare (1.1.1.1), while in the second one the actual analysis of the responses provided by the suspicious resolver is performed.
 
 This work is inspired by [CERTainty](https://censoredplanet.org/certainty), a tool used for detecting and measuring censorship on the internet, developed and described in an [article](https://arxiv.org/abs/2305.08189) by Elisa Tsai, Deepak Kumar, Ram Sundara Raman, Gavin Li, Yael Eiger and Roya Ensafi.
 
