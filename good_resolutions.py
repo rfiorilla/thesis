@@ -18,7 +18,10 @@ def output(dmns):
 		for d in dmns:
 			result = subprocess.run("nslookup" + " " + d, shell=True, capture_output=True, text=True)
 			if result.stdout.find("No answer") == -1:
-				ip = result.stdout.splitlines()[5].split()[-1]
+				try:
+					ip = result.stdout.splitlines()[5].split()[-1]
+				except IndexError:
+					ip = "N/A"
 			else:
 				ip = "N/A"
 			csv.writer(f_out).writerow([d, ip])
@@ -26,7 +29,7 @@ def output(dmns):
 			percentage(cnt / len(dmns) * 100)
 
 def main():
-	print(f"\tCreating a list of trusted resolutions (DNS resolvers: 8.8.8.8, 8.8.4.4)...")
+	print(f"\tCreating a list of trusted resolutions...")
 	domains = []
 	input(domains)
 	output(domains)

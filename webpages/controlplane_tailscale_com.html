@@ -1,0 +1,1011 @@
+    
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<title>Tailscale</title>
+<meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0, minimum-scale=1.0" />
+<link rel="preload" href="/fonts/Inter.var.latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+html, body { height: 100%; }
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, dd, dt, dl, blockquote, figure {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: inherit;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0.0);
+}
+
+ul, li {
+	list-style: none;
+}
+
+button, input, optgroup, select, textarea {
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+@font-face {
+	font-family: "Inter";
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+	src: url("/fonts/Inter.var.latin.woff2") format("woff2-variations");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: "Inter";
+	font-weight: 100 900;
+	font-style: italic;
+	font-display: swap;
+	src: url("/fonts/Inter.var.italic.latin.woff2") format("woff2-variations");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+	 
+	--gray0: #f6f4f2;
+	--gray1: #efecea;
+	--gray5: #9f9995;
+	--gray6: #666666;
+	--gray7: #474645;
+	--gray8: #343433;
+	--gray9: #242424;
+	--containerWidth: 94%;
+}
+
+body {
+	color: #242424;
+	color: var(--gray9);
+	background-color: white;
+	font-family: Inter, -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+	letter-spacing: -0.0015em;
+	line-height: 1.45;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+strong {
+	color: #242424;
+	color: var(--gray9);
+	font-weight: 500;
+}
+
+input[type=email],
+div.username,
+button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 0.25rem;
+	padding: 0.5rem 0.75rem 0.5rem;
+	font-size: 1rem;
+	font-weight: 400;
+	width: 100%;
+}
+
+input[type=email],
+div.username {
+	border-color: rgba(0, 0, 0, 0.05);
+	background-color: #f6f4f2;
+	background-color: var(--gray0);
+}
+
+label input[type=checkbox] {
+	margin-right: 0.35rem;
+}
+
+button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	text-align: center;
+	font-size: 0.875rem;
+	font-weight: 500;
+	margin-top: 0.65rem;
+	line-height: 1.7;
+	color: white;
+	background-color: #474645;
+	background-color: var(--gray7);
+	transition: background-color 100ms ease, color 100ms ease;
+}
+
+button.button-narrow {
+	width: auto;
+	min-width: 140px;
+}
+
+button:hover {
+	color: white;
+	background-color: #343433;
+	background-color: var(--gray8);
+}
+
+button.button-faded {
+	color: #474645;
+	background-color: #e6e4e2;
+}
+
+button.button-faded:hover {
+	color: #383735;
+	background-color: #d0ccc9;
+}
+
+button.button-logo svg {
+	margin-right: 0.75rem;
+}
+
+button.button-sso {
+	background-color: white;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+	color: #242424;
+	color: var(--gray9);
+	border: 1px solid #d8d6d4;
+	transition-property: color, border-color, background-color, box-shadow;
+	transition-duration: 200ms;
+	transition-timing-function: ease;
+}
+
+button.button-sso:hover,
+ 
+input[type=radio]:hover+label>button.button-sso {
+	border-color: #a9a8a6;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+button.button-just-looks {
+	pointer-events: none;
+}
+
+button.button-disabled {
+	cursor: default;
+	color: #474645;
+	background-color: #e6e4e2;
+}
+
+ 
+input[type=radio]:checked+label>button.button-sso {
+	border-color: #4b70cc;
+	background-color: #3f5db3;
+	color: white
+}
+
+form {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 20rem;
+	width: 94%;
+	width: var(--containerWidth);
+	text-align: left;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+	text-align: center;
+	min-height: 100%;
+	margin: 0 auto;
+}
+
+.logo {
+	margin-bottom: 2.5rem;
+}
+
+main header,
+main section {
+	margin-block: 1rem;
+	margin-inline: auto;
+	max-width: 35rem;
+	width: 94%;
+	width: var(--containerWidth);
+}
+
+main header h1 {
+	color: #242424;
+	color: var(--gray9);
+	font-size: 1.25rem;
+	font-weight: 600;
+	letter-spacing: -0.03em;
+}
+
+main header h2,
+main header p {
+	color: #343433;
+	color: var(--gray8);
+	font-size: 1rem;
+}
+
+main header h1 + h2,
+main header h1 + p,
+main header h2 + p,
+main header h2 + div,
+main header div + div,
+main header p + p {
+	margin-top: 0.75rem;
+}
+
+main header a,
+main div a {
+	text-decoration: underline;
+	text-decoration-color: #676767;
+	text-decoration-skip-ink: auto;
+	text-underline-offset: 0.1em;
+}
+
+main p {
+	margin-top: 1rem;
+}
+
+main section h2 {
+	color: #242424;
+	color: var(--gray9);
+	font-size: 1.12rem;
+	font-weight: 600;
+	letter-spacing: -0.03em;
+}
+
+main .alternate-auth-prompt {
+	margin-top: 4rem;
+	font-size: 0.9rem;
+	color: #343433;
+	color: var(--gray8);
+}
+
+main .question-link {
+	color: #676767;
+	font-size: 0.75rem;
+}
+
+.header > *{
+	margin: 0 5em 0 5em;
+}
+
+.divider {
+	margin-top: 1.5rem;
+	margin-bottom: 0.5rem;
+	color: #666;
+	font-size: 0.75rem;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+main footer {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2rem;
+	color: #666666;
+	color: var(--gray6);
+	letter-spacing: -0.01em;
+	font-size: 0.8rem;
+	max-width: 24rem;
+	width: 94%;
+	width: var(--containerWidth);
+}
+
+main footer.legal {
+	color: #666666;
+	color: var(--gray6);
+	max-width: 28rem;
+}
+
+main footer.legal.signup {
+	margin-top: 0.5rem;
+	margin-bottom: 2rem;
+}
+
+@media only screen and (min-height: 650px) {
+	main footer.legal {
+		margin-top: 5rem;
+	}
+}
+
+main footer p + p {
+	margin-top: 1rem;
+}
+
+main footer a {
+	text-decoration: underline;
+}
+
+dl {
+	display: grid;
+	text-align: left;
+	grid-template-columns: 30% 70%;
+	margin-block-start: 1rem;
+	margin-block-end: 1rem;
+}
+
+dl > * {
+	padding: 0.3rem 0.5rem;
+	margin-block-end: 0.1rem;
+}
+
+dt {
+	font-weight: 500;
+	background: rgba(0, 0, 0, 0.08);
+}
+
+dd {
+	font-family: monospace;
+	font-size: 0.9rem;
+	line-height: 1.6rem;
+	padding-inline-start: 0.5rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+dd:hover {
+	overflow:visible;
+}
+
+@keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+.spinner {
+	display: inline-block;
+	color: #9f9995;
+	color: var(--gray5);
+	border-color: transparent;
+	border-top-color: currentColor;
+	border-left-color: currentColor;
+	border-style: solid;
+	border-width: 4px;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	-webkit-animation: spin 700ms linear infinite;
+	animation: spin 700ms linear infinite;
+}
+
+.error {
+	color: #940821;
+}
+
+.note {
+	max-width: 50%;
+	padding: 0.75rem 1rem;
+	background-color: rgb(255 246 244);
+	border: 1px solid rgb(255 211 207);
+	border-radius: 0.375rem;
+	text-align: left;
+}
+
+#toggle-content {
+	display: none;
+}
+
+#toggle-content.open {
+	display: grid;
+}
+
+#toggle-button {
+	cursor: pointer;
+}
+
+#toggle-button {
+	display: inline-block;
+}
+
+#toggle-button:before {
+	display: inline-block;
+	margin-right: 0.3rem;
+	vertical-align: text-bottom;
+	font-size: 0.75rem;
+	content: "â¶";
+	content: "â¶" / "";
+}
+
+#toggle-button.open:before {
+	content: "â¼";
+	content: "â¼" / "";
+}
+
+ 
+
+main.oidc {
+	max-width: 28rem;
+}
+
+select.oidc {
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 0.25rem;
+	padding: 0.5rem 0.75rem 0.5rem;
+	font-size: 1rem;
+	font-weight: 400;
+	width: 100%;
+	border-color: #dad6d5;
+	background-color: white;
+}
+
+div.oidc {
+	margin-bottom: 2rem;
+	display: block;
+	position:relative;
+}
+
+div.error-box {
+	padding: 0.75rem 1rem;
+	background-color: rgb(255 246 244);
+	border: 1px solid rgb(255 211 207);
+	border-radius: 0.375rem;
+	text-align: left;
+	margin-bottom: 2rem;
+}
+
+span.oidc {
+	margin-bottom: 4px;
+	display: block;
+}
+
+p.oidc {
+	color: #666666;
+	color: var(--gray6);
+	max-width: 28rem;
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 0.5rem;
+}
+
+form.oidc {
+	max-width: 28rem;
+}
+
+label.oidc {
+	text-align: left;
+	font-weight: 500;
+	font-size: 16px;
+	margin-bottom: 0.50rem;
+	display: block;
+}
+
+input.oidc {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 0.25rem;
+	padding: 0.5rem 0.75rem 0.5rem;
+	font-size: 1rem;
+	font-weight: 400;
+	width: 100%;
+	border-color: #dad6d5;
+	background-color: white;
+}
+
+input.oidc:disabled {
+	background-color: #f6f4f2;
+	background-color: var(--gray0);
+	border-color: rgba(0, 0, 0, 0.05);
+}
+
+fieldset.oidc {
+	border: none;
+	padding: 0%;
+	width: 100%;
+}
+label.prompt {
+	padding-left: 0.5rem;
+	font-size: 0.875rem;
+}
+
+code.oidc {
+	font-family: SFMono-Regular,SFMono Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+}
+
+button.oidc-button {
+	background-color: #4b70cc;
+	color: white;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+	transition: background-color 0.2s ease-in-out;
+}
+button.oidc-button:hover {
+	background-color: #3b5aa3;
+}
+
+div.link-overlay {
+	position: relative;
+}
+
+a.link-overlay {
+	position: absolute;
+	inset-inline-end: 10px;
+	inset-block-start: 12px;
+	color: #4b70cc;
+	transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+a.link-overlay:not(.link-overlay-disabled):hover {
+	color: #3b5aa3;
+}
+a.link-overlay-disabled {
+	color: #666666;
+	opacity: 0.5;
+}
+
+.error-box p {
+	margin-top: 0.5rem
+}
+
+section.third-party-error {
+	width: 100%;
+}
+
+#toggle-chevron-button.open svg {
+	transform: rotate(90deg);
+}
+
+#toggle-chevron-button {
+	cursor: pointer;
+
+}
+
+a.oidc-sign-up-link {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 20rem;
+	width: 94%;
+	width: var(--containerWidth);
+	text-align: left;
+}
+
+.profile-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 1;
+}
+
+.profile-header > * {
+	margin: 0 0.5em 0 0em;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem 1rem;
+	color: white;
+	font-size: 1rem;
+	font-weight: 500;
+	background-color: #4d78c8;
+	border-radius: 0.375rem;
+	border: 1px #4b70cc solid;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	text-decoration: none;
+	min-width: 8rem;
+	transition: border-color 200ms ease, background-color 200ms ease;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #3f5db3;
+	border-color: #3f5db3;
+}
+
+.button.inline {
+	display: inline-flex;
+}
+
+.text-title {
+	font-size: 1.25rem;
+	font-weight: 600;
+	letter-spacing: -0.03em;
+}
+
+ 
+
+.gh-tailnet-container + .gh-tailnet-container {
+	margin-top: 0.65rem;
+}
+
+.gh-btn-override {
+	margin-top: 0;
+}
+
+.gh-btn-override:disabled {
+	color: grey;
+	cursor: default;
+}
+
+.heading {
+	margin: 4px 0 44px 0;
+}
+
+.gh-heading {
+	margin: 44px 0 20px 0;
+	font-weight: 500;
+}
+
+.gh-orgs {
+	max-width: 18rem;
+	margin-left: auto;
+  margin-right: auto;
+	width: 100%;
+}
+
+.gh-org-wrapper + .gh-org-wrapper {
+	margin-top: 0.65rem;
+}
+
+.gh-org-wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 8px 8px 8px 16px;
+	border: 1px solid #EEEBEA;
+	border-radius: 0.5rem;
+}
+
+.gh-org-wrapper .gh-more {
+	margin-top: 5px;
+	text-align: left;
+	font-size: 0.7rem;
+}
+
+.gh-org {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.gh-org button[disabled] {
+	color: var(--gray5)
+}
+
+.gh-org-name {
+	font-size: 0.875rem;
+	font-weight: 500;
+	white-space: nowrap;
+  text-overflow: ellipsis;
+	min-width: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+
+.gh-org-name img {
+	vertical-align: middle;
+	margin-right: 12px;
+	border-radius: 4px;
+}
+
+button.gh-org-join {
+	width: auto;
+	background-color: #FAF9F8;
+	border-color: #E6E4E2;
+	color: var(--gray9);
+	margin-top: 0;
+	line-height: 1;
+	margin-left: 0.5rem;
+}
+
+.gh-more {
+	margin-top: 3rem;
+	font-weight: 300;
+	font-size: 0.875rem;
+}
+
+.gh-more a {
+	text-decoration: underline;
+}
+
+
+ 
+
+.block { display: block; }
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-1 { flex: 1 1 0%; }
+.flex-wrap { flex-wrap: wrap; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.shrink-0 { flex-shrink: 0; }
+.text-sm { font-size: 0.875rem; }
+.text-xs { font-size: 0.75rem; }
+.text-right { text-align: right; }
+.text-text-muted { color: #706E6D; }
+.font-medium { font-weight: 500;}
+.gap-2 { gap: 0.5rem; }
+.gap-3 { gap: 0.75rem; }
+.gap-4 { gap: 1rem;}
+.w-4 { width: 1rem; }
+.w-6 { width: 1.5rem; }
+.w-8 { width: 2rem; }
+.w-full { width: 100%; }
+.w-auto { width: auto; }
+.min-w-0 { min-width: 0; }
+.max-w-sm { max-width: 20rem; }
+.max-w-md { max-width: 28rem; }
+.max-w-none { max-width: none; }
+.h-4 { height: 1rem; }
+.h-6 { height: 1.5rem; }
+.h-8 { height: 2rem; }
+.m-0 { margin: 0px; }
+.mt-8 { margin-top: 2rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-8 { margin-bottom: 2rem; }
+.mb-10 { margin-bottom: 2.5rem; }
+.mb-12 { margin-bottom: 3rem; }
+.mb-16 { margin-bottom: 4rem; }
+.mb-20 { margin-bottom: 5rem; }
+.bg-cover { background-size: cover; }
+.bg-gray-200 { background-color: #e5e5e5; }
+.border { border: 1px #eeebea solid; }
+.rounded-full { border-radius: 9999px; }
+.truncate {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	max-width: 32rem;
+	width: 100%;
+}
+.select-none { user-select: none; }
+
+</style>
+
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+<svg width="121" height="22" viewBox="0 0 121 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle class="dot dot-a1" opacity="0.2" cx="3.4" cy="3.25" r="2.7" fill="currentColor"></circle>
+<circle class="dot dot-a2" cx="3.4" cy="11.3" r="2.7" fill="currentColor"></circle>
+<circle class="dot dot-a3" opacity="0.2" cx="3.4" cy="19.5" r="2.7" fill="currentColor"></circle>
+
+<circle class="dot dot-b1" cx="11.5" cy="11.3" r="2.7" fill="currentColor"></circle>
+<circle class="dot dot-b2" cx="11.5" cy="19.5" r="2.7" fill="currentColor"></circle>
+<circle class="dot dot-b3" opacity="0.2" cx="11.5" cy="3.25" r="2.7" fill="currentColor"></circle>
+
+<circle class="dot dot-c1" opacity="0.2" cx="19.5" cy="3.25" r="2.7" fill="currentColor"></circle>
+<circle class="dot dot-c2" cx="19.5" cy="11.3" r="2.7" fill="currentColor"></circle>
+<circle class="dot dot-c3" opacity="0.2" cx="19.5" cy="19.5" r="2.7" fill="currentColor"></circle>
+
+<path d="M38.4135 20.0991C39.1764 20.0991 39.7963 20.0276 40.5354 19.8845V17.1188C40.0824 17.2857 39.5817 17.3334 39.1049 17.3334C37.9366 17.3334 37.5075 16.7612 37.5075 15.6645V10.0378H40.5354V7.2721H37.5075V3.17128H34.1696V7.2721H32V10.0378H34.1696V15.9744C34.1696 18.597 35.5525 20.0991 38.4135 20.0991Z" fill="currentColor"></path>
+<path d="M45.9867 20.0991C47.7748 20.0991 48.9669 19.503 49.563 18.5732C49.6106 18.9785 49.7537 19.5269 49.9444 19.8607H52.9485C52.7816 19.2884 52.6624 18.3825 52.6624 17.7864V11.2537C52.6624 8.55957 50.7312 7.03368 47.4649 7.03368C44.9853 7.03368 43.0541 7.96352 41.9812 9.32251L43.8886 11.206C44.7469 10.2523 45.8436 9.75166 47.1788 9.75166C48.8 9.75166 49.5153 10.3 49.5153 11.1107C49.5153 11.8021 49.0384 12.2789 46.4635 12.2789C43.9839 12.2789 41.4805 13.3041 41.4805 16.1652C41.4805 18.8116 43.3879 20.0991 45.9867 20.0991ZM46.6542 17.5718C45.3668 17.5718 44.7707 17.0235 44.7707 16.0459C44.7707 15.1876 45.486 14.6154 46.6781 14.6154C48.5854 14.6154 49.11 14.4962 49.5153 14.0909V15.1161C49.5153 16.4751 48.3709 17.5718 46.6542 17.5718Z" fill="currentColor"></path>
+<path d="M54.8322 5.67469H58.3131V2.55139H54.8322V5.67469ZM54.9037 19.8607H58.2416V7.2721H54.9037V19.8607Z" fill="currentColor"></path>
+<path d="M60.6733 19.8607H64.0112V2.93286H60.6733V19.8607Z" fill="currentColor"></path>
+<path d="M70.949 20.0991C74.6207 20.0991 76.5042 18.1679 76.5042 16.1413C76.5042 14.3055 75.5744 12.9465 72.5226 12.3981C70.3768 12.0167 69.0417 11.5398 69.0417 10.8007C69.0417 10.157 69.8046 9.70398 71.0921 9.70398C72.2365 9.70398 73.1902 10.0855 73.9054 10.9199L76.0274 9.13177C74.9545 7.79662 73.1902 7.03368 71.0921 7.03368C67.8734 7.03368 65.8707 8.7503 65.8707 10.8484C65.8707 13.1372 67.9688 14.1624 70.2338 14.5677C72.1173 14.9015 73.1663 15.2592 73.1663 16.0698C73.1663 16.7612 72.4272 17.3334 71.0205 17.3334C69.6377 17.3334 68.5648 16.6897 68.0641 15.736L65.2508 17.0711C65.9422 18.7878 68.3026 20.0991 70.949 20.0991Z" fill="currentColor"></path>
+<path d="M83.9665 20.0991C86.3507 20.0991 88.0674 19.1454 89.3548 16.9996L86.6845 15.6406C86.1838 16.642 85.3732 17.3334 83.9665 17.3334C81.8446 17.3334 80.7002 15.6168 80.7002 13.5425C80.7002 11.4683 81.9161 9.79935 83.9665 9.79935C85.254 9.79935 86.1123 10.4908 86.613 11.5398L89.3071 10.1093C88.4011 8.13041 86.613 7.03368 83.9665 7.03368C79.6035 7.03368 77.3623 10.2285 77.3623 13.5425C77.3623 17.1427 80.0803 20.0991 83.9665 20.0991Z" fill="currentColor"></path>
+<path d="M94.6718 20.0991C96.4599 20.0991 97.652 19.503 98.2481 18.5732C98.2957 18.9785 98.4388 19.5269 98.6295 19.8607H101.634C101.467 19.2884 101.348 18.3825 101.348 17.7864V11.2537C101.348 8.55957 99.4163 7.03368 96.15 7.03368C93.6704 7.03368 91.7392 7.96352 90.6663 9.32251L92.5737 11.206C93.432 10.2523 94.5287 9.75166 95.8639 9.75166C97.4851 9.75166 98.2004 10.3 98.2004 11.1107C98.2004 11.8021 97.7235 12.2789 95.1486 12.2789C92.669 12.2789 90.1656 13.3041 90.1656 16.1652C90.1656 18.8116 92.073 20.0991 94.6718 20.0991ZM95.3393 17.5718C94.0519 17.5718 93.4558 17.0235 93.4558 16.0459C93.4558 15.1876 94.1711 14.6154 95.3632 14.6154C97.2705 14.6154 97.7951 14.4962 98.2004 14.0909V15.1161C98.2004 16.4751 97.056 17.5718 95.3393 17.5718Z" fill="currentColor"></path>
+<path d="M103.309 19.8607H106.647V2.93286H103.309V19.8607Z" fill="currentColor"></path>
+<path d="M114.658 20.0991C117.114 20.0991 119.093 19.1216 120.189 17.3811L117.662 15.7598C116.995 16.8089 116.112 17.3811 114.658 17.3811C113.013 17.3811 111.821 16.4751 111.511 14.7108H121V13.5425C121 10.2285 118.973 7.03368 114.634 7.03368C110.51 7.03368 108.268 10.2523 108.268 13.5664C108.268 18.2871 111.821 20.0991 114.658 20.0991ZM111.63 12.0882C112.155 10.4908 113.251 9.75166 114.706 9.75166C116.351 9.75166 117.352 10.7292 117.686 12.0882H111.63Z" fill="currentColor"></path>
+</svg>
+</div>
+      
+      <form  method="POST" id="login">
+         <input type="email" autofocus required id="user" name="user"
+        placeholder="Enter your email..." value="">  <input type="hidden" name="gorilla.csrf.Token" value="oDtYSYIad/IgbZB1jEDirJWL57keNd0XGJmskuEy0/V9ArZr83/nKOLGgffhg0qnC0q6QcVRLlSg8qIWWLvSAg=="> 
+        <input type="hidden" name="next_url" value="/welcome" />
+          
+        <button name="submitbtn" type="submit">Sign in</button>
+        
+      </form>
+       
+      <div class="divider">or</div>
+      <form
+        
+        method="POST"
+        id="loginGoogle"
+      >
+        <input type="hidden" name="provider" value="google" />
+        <input
+          type="hidden"
+          name="next_url"
+          value="/welcome"
+        /> <input type="hidden" name="gorilla.csrf.Token" value="oDtYSYIad/IgbZB1jEDirJWL57keNd0XGJmskuEy0/V9ArZr83/nKOLGgffhg0qnC0q6QcVRLlSg8qIWWLvSAg=="> 
+<button name="submitbtn" type="submit" class="button-logo button-sso">
+  <svg width="19" height="18" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M17 8.18371C17 7.63989 16.9551 7.09314 16.8591 6.55814H9.16046V9.63879H13.5691C13.3862 10.6324 12.7983 11.5113 11.9376 12.0698V14.0687H14.5678C16.1123 12.6754 17 10.6177 17 8.18371Z" fill="#4285F4"/>
+	<path d="M9.16042 16C11.3617 16 13.2182 15.2916 14.5707 14.0687L11.9406 12.0698C11.2088 12.5578 10.2641 12.8341 9.16342 12.8341C7.03409 12.8341 5.22865 11.4261 4.58085 9.53299H1.8667V11.5936C3.25227 14.2951 6.07438 16 9.16042 16V16Z" fill="#34A853"/>
+	<path d="M4.57786 9.53298C4.23596 8.53941 4.23596 7.46353 4.57786 6.46996V4.40933H1.8667C0.709065 6.66985 0.709065 9.33309 1.8667 11.5936L4.57786 9.53298V9.53298Z" fill="#FBBC04"/>
+	<path d="M9.16042 3.16589C10.3241 3.14825 11.4487 3.57743 12.2914 4.36523L14.6217 2.0812C13.1462 0.72312 11.1878 -0.0235267 9.16042 -1.02057e-05C6.07438 -1.02057e-05 3.25227 1.70493 1.8667 4.40932L4.57785 6.46995C5.22265 4.57394 7.03109 3.16589 9.16042 3.16589V3.16589Z" fill="#EA4335"/>
+</svg>
+
+ Sign in with Google
+</button>
+
+      </form>
+      <form
+        method="POST"
+        
+        id="loginMicrosoft"
+      >
+        <input type="hidden" name="provider" value="microsoft" />
+        <input
+          type="hidden"
+          name="next_url"
+          value="/welcome"
+        /> <input type="hidden" name="gorilla.csrf.Token" value="oDtYSYIad/IgbZB1jEDirJWL57keNd0XGJmskuEy0/V9ArZr83/nKOLGgffhg0qnC0q6QcVRLlSg8qIWWLvSAg=="> 
+<button name="submitbtn" type="submit" class="button-logo button-sso">
+  <svg width="17" height="17" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M0 0H7.57886V7.57886H0V0Z" fill="#F25022"/>
+	<path d="M0 8.42114H7.57886V16H0V8.42114Z" fill="#00A4EF"/>
+	<path d="M8.42114 0H16V7.57886H8.42114V0Z" fill="#7FBA00"/>
+	<path d="M8.42114 8.42114H16V16H8.42114V8.42114Z" fill="#FFB900"/>
+</svg>
+ Sign in with Microsoft
+</button>
+
+
+      </form>
+      <form
+        method="POST"
+        
+        id="loginGitHub"
+      >
+        <input type="hidden" name="provider" value="github" />
+        <input
+          type="hidden"
+          name="next_url"
+          value="/welcome"
+        /> <input type="hidden" name="gorilla.csrf.Token" value="oDtYSYIad/IgbZB1jEDirJWL57keNd0XGJmskuEy0/V9ArZr83/nKOLGgffhg0qnC0q6QcVRLlSg8qIWWLvSAg=="> 
+<button name="submitbtn" type="submit" class="button-logo button-sso">
+  <svg width="19" height="19" viewBox="0 0 16 16" version="1.1">
+	<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+</svg>
+
+ Sign in with GitHub
+</button>
+
+      </form>
+      <form
+        method="POST"
+        
+        id="loginApple"
+      >
+        <input type="hidden" name="provider" value="apple" />
+        <input
+          type="hidden"
+          name="next_url"
+          value="/welcome"
+        /> <input type="hidden" name="gorilla.csrf.Token" value="oDtYSYIad/IgbZB1jEDirJWL57keNd0XGJmskuEy0/V9ArZr83/nKOLGgffhg0qnC0q6QcVRLlSg8qIWWLvSAg=="> 
+<button name="submitbtn" type="submit" class="button-logo button-sso">
+  <svg width="16px" height="16px" viewBox="0 0 56 56">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="matrix(2.7742681,0,0,2.7742681,-49.798152,-43.154083)">
+    <rect id="Rectangle" x="6" y="6" width="44" height="44" />
+    <path
+       d="m 28.222656,20.384615 c 0.832031,0 1.875,-0.579784 2.496094,-1.352829 0.5625,-0.700572 0.972656,-1.678957 0.972656,-2.657342 0,-0.132867 -0.01172,-0.265735 -0.03516,-0.374444 -0.925781,0.03624 -2.039063,0.640178 -2.707031,1.44946 -0.527344,0.61602 -1.007813,1.582326 -1.007813,2.57279 0,0.144946 0.02344,0.289892 0.03516,0.338208 0.05859,0.01208 0.152344,0.02416 0.246094,0.02416 z M 25.292969,35 c 1.136718,0 1.640625,-0.785124 3.058593,-0.785124 1.441407,0 1.757813,0.760966 3.023438,0.760966 1.242187,0 2.074219,-1.183725 2.859375,-2.343293 0.878906,-1.328671 1.242187,-2.633185 1.265625,-2.693579 -0.08203,-0.02416 -2.460938,-1.026701 -2.460938,-3.841068 0,-2.439924 1.875,-3.539097 1.980469,-3.623649 -1.242187,-1.835982 -3.128906,-1.884298 -3.644531,-1.884298 -1.394531,0 -2.53125,0.869676 -3.246094,0.869676 -0.773437,0 -1.792969,-0.82136 -3,-0.82136 -2.296875,0 -4.628906,1.95677 -4.628906,5.652892 0,2.294978 0.867187,4.722823 1.933594,6.293071 C 23.347656,33.912905 24.144531,35 25.292969,35 Z"
+       fill="#000000"
+       fill-rule="nonzero" />
+  </g>
+</svg>
+ Sign in with Apple
+</button>
+
+      </form>
+      
+      <form
+        method="POST"
+        
+        id="loginPasskey"
+      >
+        <input type="hidden" name="provider" value="passkey" />
+        <input
+          type="hidden"
+          name="next_url"
+          value="/welcome"
+        /> <input type="hidden" name="gorilla.csrf.Token" value="oDtYSYIad/IgbZB1jEDirJWL57keNd0XGJmskuEy0/V9ArZr83/nKOLGgffhg0qnC0q6QcVRLlSg8qIWWLvSAg=="> <input type="hidden" name="passkey_credentials" />
+<button name="passkey_sign_in" type="submit" class="button-logo button-sso">
+    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 489 475" width="16" height="16"><style>.a{fill:#010101}.b{fill:#fcfcfc}</style><path  d="m326 348c0 37.2-0.1 73.8 0.1 110.5 0 3.6-0.8 4.6-4.6 4.6q-157.9-0.2-315.9 0c-3.4 0-4.8-0.4-4.7-4.5 0.7-20.8-1.3-41.7 1-62.4 5-43 25.1-77.7 59.7-103.7 26.6-20 56.8-29.7 90.3-29.5 25.9 0.1 51.9-0.1 77.9 0 19.1 0.1 37.2 4.5 54.8 11.8 2 0.9 3.1 2.1 4 4 8.3 17.2 19.7 32 34.6 43.9 2 1.6 2.9 3.2 2.9 5.8-0.2 6.3-0.1 12.7-0.1 19.5z"/><path class="a" d="m300.9 104.4c1.7 48.7-17.9 85.7-60.6 108.4-67.8 36-150.6-6-163.1-81.8-10.3-62.5 34.5-122.4 97.2-129.9 60.6-7.2 115.4 33.8 125.4 93.9 0.5 2.9 0.7 5.9 1.1 9.4z"/><path class="a" d="m348.4 155.3c34.5-24.2 77.3-23.1 108.5 2.7 48.9 40.4 39.7 118-17.3 146-2.1 1-4.1 2-7.1 3.4 9.4 9.2 18.4 18.3 27.6 27 3.1 2.8 3 4.4 0 7.2-10.5 10.2-20.7 20.8-31.2 31-2.2 2.2-2.5 3.3-0.1 5.7 10.7 10.4 21.2 21.2 31.9 31.7 2.6 2.5 2.3 3.8-0.1 6.1-18.8 18.7-37.6 37.4-56.2 56.3-2.8 2.8-4.3 2.5-6.9-0.1q-15.2-15.6-30.7-30.8c-2.5-2.4-3.4-4.9-3.4-8.3 0.1-41.3 0.1-82.7 0.1-124 0-3-0.5-5-3.6-6.7-56.8-31-62.8-106.6-11.5-147.2z"/><path class="b" d="m386.5 220.6c-15.5-13.3-13.1-34.9 4.5-42.8 10.4-4.7 22.9-1.4 29.9 7.8 6.8 8.9 6.6 21.7-0.5 30.5-7.3 8.9-19.4 11.7-29.7 6.9-1.4-0.6-2.6-1.4-4.2-2.4z"/></svg> Sign in with a passkey
+</button>
+<input type="hidden" name="passkey_challenge" value="e0odvTVYNH0ZItZqqs7NWavEEFY6nZrV" />
+<input type="hidden" name="passkey_user_id" value="" />
+<script type="text/javascript" src="/js/passkey-script.js"></script>
+<template id="error-box-tmpl">
+  <div id="error-box" class="error-box error text-sm">
+    <div class="flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="feather feather-alert-circle">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="8" x2="12" y2="12"></line>
+        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+      </svg>
+      <h3 class="font-medium">Error</h3>
+    </div>
+    <p aria-live="polite" class="error-message"></p>
+  </div>
+</template>
+<style>
+  div.username {
+    position: relative;
+    display: flex;
+    padding: 0;
+  }
+
+  div.username input {
+    padding: 8px;
+    width: 66%;
+    border-style: none;
+  }
+
+  div.username input:focus:not(.focus-visible) {
+    outline: none;
+  }
+
+  div.username span {
+    pointer-events: none;
+    user-select: none;
+    display: inline-block;
+    text-align: center;
+    flex-grow: 1;
+    padding: 8px;
+    color: #706e6d;
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+  }
+</style>
+
+
+      </form>
+        
+      <footer>
+        
+
+        <p>
+          <strong>First time?</strong> Learn more at
+          <a href="https://tailscale.com" target="_blank">tailscale.com</a>.
+        </p>
+      </footer>
+      <footer class="legal">
+        <p>
+          By clicking the buttons above, you acknowledge that you have read,
+          understood, and agree to Tailscaleâs
+          <a href="https://tailscale.com/terms" target="_blank"
+            >Terms of Service</a
+          >
+          and
+          <a href="https://tailscale.com/privacy" target="_blank"
+            >Privacy Policy</a
+          >.
+        </p>
+      </footer>
+      
+    </main>
+    
+    <script type="text/javascript" src="/js/login-session-clear.js"></script>
+    
+    <script type="text/javascript" src="/js/login-blur-listener.js"></script>
+    <script type="text/javascript" src="/js/utm-cookie-script.js"></script>
+  </body>
+</html>

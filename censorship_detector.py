@@ -20,7 +20,10 @@ def bad_resolutions(dmns):
 		for d in dmns:
 			result = subprocess.run("nslookup" + " " + d, shell=True, capture_output=True, text=True)
 			if result.stdout.find("No answer") == -1:
-				ip = result.stdout.splitlines()[5].split()[-1]
+				try:
+					ip = result.stdout.splitlines()[5].split()[-1]
+				except IndexError:
+					ip = "N/A"
 			else:
 				ip = "N/A"
 			csv.writer(f_out).writerow([d, ip])
@@ -53,6 +56,7 @@ def certificate_check(mism_resol):
 		invalid_mism = 0
 		invalid = 0
 		for row in r_in:
+			flag = 0
 			expiration = 0
 			try:
 				result = subprocess.Popen("openssl s_client -showcerts -connect" + " " + row[0] + ":443", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
@@ -61,18 +65,23 @@ def certificate_check(mism_resol):
 				result.kill()
 				expiration = 1
 			if expiration == 0:
-				subject = stdout.decode().splitlines()[3].split("CN")[-1].lstrip("=")
-				if stdout.decode().find("Verification: OK") != -1:
-					if stdout.decode().find(row[0]) == -1:
-						csv.writer(f_out).writerow([row[0], "N", "Y", subject])
-						mism += 1
-				else:
-					if stdout.decode().find(row[0]) == -1:
-						csv.writer(f_out).writerow([row[0], "Y", "Y", subject])
-						invalid_mism += 1
+				san = subprocess.run("echo" + " \"" + stdout.decode() + "\" | " + "openssl x509 -noout -text | grep -A 1 \"Subject Alternative Name\"", shell=True, capture_output=True, text=True)
+				try:
+					subject = stdout.decode().splitlines()[3].split("CN")[-1].lstrip("=")
+				except IndexError:
+					flag = 1
+				if flag == 0:
+					if stdout.decode().find("Verification: OK") != -1:
+						if san.stdout.find(row[0]) == -1:
+							csv.writer(f_out).writerow([row[0], "N", "Y", subject])
+							mism += 1
 					else:
-						csv.writer(f_out).writerow([row[0], "Y", "N", subject])
-						invalid += 1
+						if san.stdout.find(row[0]) == -1:
+							csv.writer(f_out).writerow([row[0], "Y", "Y", subject])
+							invalid_mism += 1
+						else:
+							csv.writer(f_out).writerow([row[0], "Y", "N", subject])
+							invalid += 1
 			cnt += 1
 			percentage(cnt / mism_resol * 100)
 	print(f"\tCompleted: 100.00%")
@@ -122,21 +131,23 @@ def curler(certs):
 				result.kill()
 				expiration = 1
 			if (expiration != 1):
-				score = blockpage_score_calculator(stdout.decode(encoding='latin-1').split("\n\r\n")[-1])
-				status = stdout.decode(encoding='latin-1').split("\n\r\n")[-2].splitlines()[0].split()[1]
-				csv.writer(f_out).writerow([row[0], status, round(score, 2)])
-				with open ("webpages/" + row[0].split(".")[0] + ".html", "w") as html:
-					html.write(stdout.decode(encoding='latin-1').split("\n\r\n")[-1])
-				curled += 1
+				try:
+					score = blockpage_score_calculator(stdout.decode(encoding='latin-1').split("\n\r\n")[-1])
+					status = stdout.decode(encoding='latin-1').split("\n\r\n")[-2].splitlines()[0].split()[1]
+					csv.writer(f_out).writerow([row[0], status, round(score, 2)])
+					with open ("webpages/" + row[0].replace('.', '_') + ".html", "w") as html:
+						html.write(stdout.decode(encoding='latin-1').split("\n\r\n")[-1])
+					curled += 1
+				except IndexError:
+					pass
 			cnt += 1
 			percentage(cnt / certs * 100)
 	print(f"\tCompleted: 100.00%")
 	csv_sorter("webpages.csv")
 	print(f"\t{curled} pages retrieved.")
 
-
 def main():
-	print(f"\tCreating a list of untrusted resolutions (DNS resolver: 123.123.123.123)...")
+	print(f"\tCreating a list of untrusted resolutions...")
 	domains = []
 	input(domains)
 	bad_resolutions(domains)
