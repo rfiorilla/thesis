@@ -20,7 +20,7 @@ To execute the tool in the correct way:
 
 ## Schema
 
-* `input.csv` contains a list of the most visited domains on the internet, extrapolated by the [Tranco top 1 Million list](https://tranco-list.eu/).
+* `input.csv` contains a list of the most visited domains on the internet, composed by the top 500 domains from the [Tranco top 1 Million list](https://tranco-list.eu/) and by the full [Citizen Lab Global Test list](https://github.com/citizenlab/test-lists/).
 
 * `output_good.csv` contains the list of trusted resolutions generated using the trusted DNS resolver.
 
