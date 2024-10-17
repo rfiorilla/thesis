@@ -12,11 +12,11 @@ To execute the tool in the correct way:
 
 * Set the machine's DNS resolver to a trusted one (this can be done on Linux by modifying the `/etc/resolv.conf` file, removing or commenting the nameserver currently in use, and adding the desired one, e.g., `nameserver 8.8.8.8`). 
 
-* Run `good_resolutions.py`.
+* Run `python good_resolutions.py`.
 
 * Set the machine's DNS resolver to the suspicious one to be analyzed (in the same manner described before).
 
-* Run `censorship_detector.py`.
+* Run `python censorship_detector.py`.
 
 ## Schema
 
