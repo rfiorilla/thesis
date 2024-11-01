@@ -1,0 +1,193 @@
+---------- ORIGINAL FORMAT ----------
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=api.tweetdeck.com
+   i:C=US, O=Let's Encrypt, CN=R11
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Oct 11 20:03:55 2024 GMT; NotAfter: Jan  9 20:03:54 2025 GMT
+-----BEGIN CERTIFICATE-----
+MIIF+TCCBOGgAwIBAgISAxVAQ0nWdP3A+nkD6ZzJ8SBzMA0GCSqGSIb3DQEBCwUA
+MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD
+EwNSMTEwHhcNMjQxMDExMjAwMzU1WhcNMjUwMTA5MjAwMzU0WjAcMRowGAYDVQQD
+ExFhcGkudHdlZXRkZWNrLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC
+ggEBAKPfTleHPCwAcO5SutzRfdHHzVHIMHK/zTmtRUTSyVmbhiHK63knfFSoPde0
+b0mVpecoqCqRYPd+rl2LrnLTug7EhH6+seNub/xyYTf2ANGNe808YDiVlX0XlkBf
+JrsF+wxsfHlLOySjt/FOj/t4yPJ0zfYjRzt4LXoUeV8BvAGF8Kw9qh0+Wia9/Atg
+asfzvjc3XFjz7Vf1tJ5nNBp+EIzgFUBIQWROKoX83E5yp3imx1CnKOHh/2K55oAZ
+zoBf6DyHO33zE2yAo/CYaYor8ZJmPemxnlWmuJeIuyHlspw3nu1Gw24//1uoXlWe
+ZmacxmVHxOkfNCgIHq9nz5hf4FcCAwEAAaOCAxwwggMYMA4GA1UdDwEB/wQEAwIF
+oDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAd
+BgNVHQ4EFgQUKj9LyHcuO8tR93Lve2r+90naevswHwYDVR0jBBgwFoAUxc9GpOr0
+w8B6bJXELbBeki8m47kwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzABhhZodHRw
+Oi8vcjExLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjExLmkubGVu
+Y3Iub3JnLzCCASAGA1UdEQSCARcwggETghFhcGkudHdlZXRkZWNrLmNvbYISYmxv
+Zy50d2VldGRlY2suY29tghdkb3dubG9hZHMudHdlZXRkZWNrLmNvbYIPcHJvLnR3
+aXR0ZXIuY29tgglwcm8ueC5jb22CDnRkLnR3aXR0ZXIuY29tggh0ZC54LmNvbYIR
+dGRhcGkudHdpdHRlci5jb22CC3RkYXBpLnguY29tghF0ZHdlYi50d2l0dGVyLmNv
+bYILdGR3ZWIueC5jb22CDXR3ZWV0ZGVjay5jb22CFXR3ZWV0ZGVjay50d2l0dGVy
+LmNvbYIPdHdlZXRkZWNrLnguY29tghF3ZWIudHdlZXRkZWNrLmNvbYIRd3d3LnR3
+ZWV0ZGVjay5jb20wEwYDVR0gBAwwCjAIBgZngQwBAgEwggEFBgorBgEEAdZ5AgQC
+BIH2BIHzAPEAdgA/F0tP1yJHWJQdZRyEvg0S7ZA3fx+FauvBvyiF7PhkbgAAAZJ9
+Y8uxAAAEAwBHMEUCIQCpBX91kscZ/E6Tth+f5h5VWsZGEuypciol12pdGFXbbQIg
+GgTz1c5xnnHrXKOy+eScrUO10wBQYHyHBuWFFrhzmukAdwDPEVbu1S58r/OHW9lp
+LpvpGnFnSrAX7KwB0lt3zsw7CAAAAZJ9Y8vzAAAEAwBIMEYCIQDEQ8lMIuJG7hbI
+3vsh2Qhct6ml/jPGH1gdqRcVmR0ujgIhAO5xiqDkMClRM4HA04SZYe4GY8O8Z8A7
+Kpyl2MPFPvSpMA0GCSqGSIb3DQEBCwUAA4IBAQA42l821JcxNstEjzAZR66RA/Ts
+fUWzam0FrUinjm+JfOuCv8f2nyys5oevUuPCO3fR/ZkLGfMfqOndfaeobQQvCP4l
+rDjwvSWPmrl0ITVLFmG4+eqsKDYq1nNKz7fDX+ON6xT7ZC64oOjGR3aOjrFgjt3H
+fxZflUAHVWRU87U2A6Di8B0lJ8un/Xr6Q5mfYvSu+7OU5Ff0qK73ZpIUPPt0uvTo
+nPw+WhTdkYjoQOwGBfyL6xPwl7PUQ08IQwKX4hKTf+/dQYZWH1USEbyfHwrUiZtk
+kKViS2zo7Gfn9KVf7gd5YObsMweGpqfGewyHlGt2rcp9vT9ynEORzSrekzm0
+-----END CERTIFICATE-----
+ 1 s:C=US, O=Let's Encrypt, CN=R11
+   i:C=US, O=Internet Security Research Group, CN=ISRG Root X1
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Mar 13 00:00:00 2024 GMT; NotAfter: Mar 12 23:59:59 2027 GMT
+-----BEGIN CERTIFICATE-----
+MIIFBjCCAu6gAwIBAgIRAIp9PhPWLzDvI4a9KQdrNPgwDQYJKoZIhvcNAQELBQAw
+TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh
+cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjQwMzEzMDAwMDAw
+WhcNMjcwMzEyMjM1OTU5WjAzMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3Mg
+RW5jcnlwdDEMMAoGA1UEAxMDUjExMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAuoe8XBsAOcvKCs3UZxD5ATylTqVhyybKUvsVAbe5KPUoHu0nsyQYOWcJ
+DAjs4DqwO3cOvfPlOVRBDE6uQdaZdN5R2+97/1i9qLcT9t4x1fJyyXJqC4N0lZxG
+AGQUmfOx2SLZzaiSqhwmej/+71gFewiVgdtxD4774zEJuwm+UE1fj5F2PVqdnoPy
+6cRms+EGZkNIGIBloDcYmpuEMpexsr3E+BUAnSeI++JjF5ZsmydnS8TbKF5pwnnw
+SVzgJFDhxLyhBax7QG0AtMJBP6dYuC/FXJuluwme8f7rsIU5/agK70XEeOtlKsLP
+Xzze41xNG/cLJyuqC0J3U095ah2H2QIDAQABo4H4MIH1MA4GA1UdDwEB/wQEAwIB
+hjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwEgYDVR0TAQH/BAgwBgEB
+/wIBADAdBgNVHQ4EFgQUxc9GpOr0w8B6bJXELbBeki8m47kwHwYDVR0jBBgwFoAU
+ebRZ5nu25eQBc4AIiMgaWPbpm24wMgYIKwYBBQUHAQEEJjAkMCIGCCsGAQUFBzAC
+hhZodHRwOi8veDEuaS5sZW5jci5vcmcvMBMGA1UdIAQMMAowCAYGZ4EMAQIBMCcG
+A1UdHwQgMB4wHKAaoBiGFmh0dHA6Ly94MS5jLmxlbmNyLm9yZy8wDQYJKoZIhvcN
+AQELBQADggIBAE7iiV0KAxyQOND1H/lxXPjDj7I3iHpvsCUf7b632IYGjukJhM1y
+v4Hz/MrPU0jtvfZpQtSlET41yBOykh0FX+ou1Nj4ScOt9ZmWnO8m2OG0JAtIIE38
+01S0qcYhyOE2G/93ZCkXufBL713qzXnQv5C/viOykNpKqUgxdKlEC+Hi9i2DcaR1
+e9KUwQUZRhy5j/PEdEglKg3l9dtD4tuTm7kZtB8v32oOjzHTYw+7KdzdZiw/sBtn
+UfhBPORNuay4pJxmY/WrhSMdzFO2q3Gu3MUBcdo27goYKjL9CTF8j/Zz55yctUoV
+aneCWs/ajUX+HypkBTA+c8LGDLnWO2NKq0YD/pnARkAnYGPfUDoHR9gVSp/qRx+Z
+WghiDLZsMwhN1zjtSC0uBWiugF3vTNzYIEFfaPG7Ws3jDrAMMYebQ95JQ+HIBD/R
+PBuHRTBpqKlyDnkSHDHYPiNX3adPoPAcgdF3H2/W0rmoswMWgTlLn1Wu0mrks7/q
+pdWfS6PJ1jty80r2VKsM/Dj3YIDfbjXKdaFU5C+8bhfJGqU3taKauuz0wHVGT3eo
+6FlWkWYtbt4pgdamlwVeZEW+LM7qZEJEsMNPrfC03APKmZsJgpWCDWOKZvkZcvjV
+uYkQ4omYCTX5ohy+knMjdOmdH9c7SpqEWBDC86fiNex+O0XOMEZSa8DA
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=CN=api.tweetdeck.com
+issuer=C=US, O=Let's Encrypt, CN=R11
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 3318 bytes and written 539 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 2048 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+
+---------- READABLE FORMAT ----------
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            03:15:40:43:49:d6:74:fd:c0:fa:79:03:e9:9c:c9:f1:20:73
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=US, O=Let's Encrypt, CN=R11
+        Validity
+            Not Before: Oct 11 20:03:55 2024 GMT
+            Not After : Jan  9 20:03:54 2025 GMT
+        Subject: CN=api.tweetdeck.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:a3:df:4e:57:87:3c:2c:00:70:ee:52:ba:dc:d1:
+                    7d:d1:c7:cd:51:c8:30:72:bf:cd:39:ad:45:44:d2:
+                    c9:59:9b:86:21:ca:eb:79:27:7c:54:a8:3d:d7:b4:
+                    6f:49:95:a5:e7:28:a8:2a:91:60:f7:7e:ae:5d:8b:
+                    ae:72:d3:ba:0e:c4:84:7e:be:b1:e3:6e:6f:fc:72:
+                    61:37:f6:00:d1:8d:7b:cd:3c:60:38:95:95:7d:17:
+                    96:40:5f:26:bb:05:fb:0c:6c:7c:79:4b:3b:24:a3:
+                    b7:f1:4e:8f:fb:78:c8:f2:74:cd:f6:23:47:3b:78:
+                    2d:7a:14:79:5f:01:bc:01:85:f0:ac:3d:aa:1d:3e:
+                    5a:26:bd:fc:0b:60:6a:c7:f3:be:37:37:5c:58:f3:
+                    ed:57:f5:b4:9e:67:34:1a:7e:10:8c:e0:15:40:48:
+                    41:64:4e:2a:85:fc:dc:4e:72:a7:78:a6:c7:50:a7:
+                    28:e1:e1:ff:62:b9:e6:80:19:ce:80:5f:e8:3c:87:
+                    3b:7d:f3:13:6c:80:a3:f0:98:69:8a:2b:f1:92:66:
+                    3d:e9:b1:9e:55:a6:b8:97:88:bb:21:e5:b2:9c:37:
+                    9e:ed:46:c3:6e:3f:ff:5b:a8:5e:55:9e:66:66:9c:
+                    c6:65:47:c4:e9:1f:34:28:08:1e:af:67:cf:98:5f:
+                    e0:57
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                2A:3F:4B:C8:77:2E:3B:CB:51:F7:72:EF:7B:6A:FE:F7:49:DA:7A:FB
+            X509v3 Authority Key Identifier: 
+                C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9
+            Authority Information Access: 
+                OCSP - URI:http://r11.o.lencr.org
+                CA Issuers - URI:http://r11.i.lencr.org/
+            X509v3 Subject Alternative Name: 
+                DNS:api.tweetdeck.com, DNS:blog.tweetdeck.com, DNS:downloads.tweetdeck.com, DNS:pro.twitter.com, DNS:pro.x.com, DNS:td.twitter.com, DNS:td.x.com, DNS:tdapi.twitter.com, DNS:tdapi.x.com, DNS:tdweb.twitter.com, DNS:tdweb.x.com, DNS:tweetdeck.com, DNS:tweetdeck.twitter.com, DNS:tweetdeck.x.com, DNS:web.tweetdeck.com, DNS:www.tweetdeck.com
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.1
+            CT Precertificate SCTs: 
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:
+                                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E
+                    Timestamp : Oct 11 21:02:25.201 2024 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:45:02:21:00:A9:05:7F:75:92:C7:19:FC:4E:93:B6:
+                                1F:9F:E6:1E:55:5A:C6:46:12:EC:A9:72:2A:25:D7:6A:
+                                5D:18:55:DB:6D:02:20:1A:04:F3:D5:CE:71:9E:71:EB:
+                                5C:A3:B2:F9:E4:9C:AD:43:B5:D3:00:50:60:7C:87:06:
+                                E5:85:16:B8:73:9A:E9
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:
+                                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08
+                    Timestamp : Oct 11 21:02:25.267 2024 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:46:02:21:00:C4:43:C9:4C:22:E2:46:EE:16:C8:DE:
+                                FB:21:D9:08:5C:B7:A9:A5:FE:33:C6:1F:58:1D:A9:17:
+                                15:99:1D:2E:8E:02:21:00:EE:71:8A:A0:E4:30:29:51:
+                                33:81:C0:D3:84:99:61:EE:06:63:C3:BC:67:C0:3B:2A:
+                                9C:A5:D8:C3:C5:3E:F4:A9
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        38:da:5f:36:d4:97:31:36:cb:44:8f:30:19:47:ae:91:03:f4:
+        ec:7d:45:b3:6a:6d:05:ad:48:a7:8e:6f:89:7c:eb:82:bf:c7:
+        f6:9f:2c:ac:e6:87:af:52:e3:c2:3b:77:d1:fd:99:0b:19:f3:
+        1f:a8:e9:dd:7d:a7:a8:6d:04:2f:08:fe:25:ac:38:f0:bd:25:
+        8f:9a:b9:74:21:35:4b:16:61:b8:f9:ea:ac:28:36:2a:d6:73:
+        4a:cf:b7:c3:5f:e3:8d:eb:14:fb:64:2e:b8:a0:e8:c6:47:76:
+        8e:8e:b1:60:8e:dd:c7:7f:16:5f:95:40:07:55:64:54:f3:b5:
+        36:03:a0:e2:f0:1d:25:27:cb:a7:fd:7a:fa:43:99:9f:62:f4:
+        ae:fb:b3:94:e4:57:f4:a8:ae:f7:66:92:14:3c:fb:74:ba:f4:
+        e8:9c:fc:3e:5a:14:dd:91:88:e8:40:ec:06:05:fc:8b:eb:13:
+        f0:97:b3:d4:43:4f:08:43:02:97:e2:12:93:7f:ef:dd:41:86:
+        56:1f:55:12:11:bc:9f:1f:0a:d4:89:9b:64:90:a5:62:4b:6c:
+        e8:ec:67:e7:f4:a5:5f:ee:07:79:60:e6:ec:33:07:86:a6:a7:
+        c6:7b:0c:87:94:6b:76:ad:ca:7d:bd:3f:72:9c:43:91:cd:2a:
+        de:93:39:b4

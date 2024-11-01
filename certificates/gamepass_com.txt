@@ -1,0 +1,248 @@
+---------- ORIGINAL FORMAT ----------
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:C=US, ST=WA, L=Redmond, O=Microsoft Corporation, CN=*.oneroute.microsoft.com
+   i:C=US, O=Microsoft Corporation, CN=Microsoft Azure RSA TLS Issuing CA 08
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA384
+   v:NotBefore: Oct 25 02:40:26 2024 GMT; NotAfter: Apr 23 02:40:26 2025 GMT
+-----BEGIN CERTIFICATE-----
+MIIIjTCCBnWgAwIBAgITMwCki1L3TZRExosb1gAAAKSLUjANBgkqhkiG9w0BAQwF
+ADBdMQswCQYDVQQGEwJVUzEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9u
+MS4wLAYDVQQDEyVNaWNyb3NvZnQgQXp1cmUgUlNBIFRMUyBJc3N1aW5nIENBIDA4
+MB4XDTI0MTAyNTAyNDAyNloXDTI1MDQyMzAyNDAyNlowbzELMAkGA1UEBhMCVVMx
+CzAJBgNVBAgTAldBMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVNaWNyb3Nv
+ZnQgQ29ycG9yYXRpb24xITAfBgNVBAMMGCoub25lcm91dGUubWljcm9zb2Z0LmNv
+bTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKi3CwF19aPcF9hCO3el
+0B4Q362JtwF2bQukvaLsscH63lNEW7kvRTpzip1WNLrXImR3wThe5IB6Ykgd2Tmr
+17C7rz21ivhEYuJJHKm7rGN8GdWz30GttEIseHCehBO8eP4a0Z5OV3iPt2Aasgqz
+wQjmxhmx1MiHHbZWZ8g6J1CH1ItKRmLD9sDcBkQEYC9BF9B+I53JAedVlS66Sk2v
+ukeRRyoCfhb82VnPXTNZyrEkBZwnCCPro++ry0z6NiHKuChJAVk8K2tusIaptwsx
+d3gIyzk7UQzPASSPzU/XR33O3wBQCuGihdAkuYN2uUlYWHwJmAL3Km4Hp7bh0Sd9
+/70CAwEAAaOCBDIwggQuMIIBfgYKKwYBBAHWeQIEAgSCAW4EggFqAWgAdwBOdaMn
+XJoQwzhbbNTfP1LrHfDgjhuNacCx+mSxYpo53wAAAZLBlSNHAAAEAwBIMEYCIQDc
+bXtiEJTVmxSPM98aHueWhyG2fMLKQiTSiTUf+SmA9QIhAP7nPYfZDnYO++mt9BAC
+4i5F3vwPjUA8ArGMdbo7XSwBAHYAfVkeEuF4KnscYWd8Xv340IdcFKBOlZ65Ay/Z
+DowuebgAAAGSwZUl4AAABAMARzBFAiAptjTXCSxUMcEybxwLvzowVvDoT6GoEakl
++A3s34icJQIhAKtBrkqSMiL7MWQklqHhTdiwUr9txE1/EZRNscQKBRI7AHUA4JKz
+/AwdyOdoNh/eYbmWTQpSeBmKctZyxLBNpW1vVAQAAAGSwZUkBwAABAMARjBEAiBe
+lj946MwFkDHOBmDjcqHqhDxnmGgdgjha/R1vIghfaAIgN64PZhKVgZ5xa2TEs04h
+St90zxpRYoiZ19wlJ5Tjqz8wJwYJKwYBBAGCNxUKBBowGDAKBggrBgEFBQcDAjAK
+BggrBgEFBQcDATA8BgkrBgEEAYI3FQcELzAtBiUrBgEEAYI3FQiHvdcbgefrRoKB
+nS6O0AyH8NodXYKr5zCH7fEfAgFkAgEtMIG0BggrBgEFBQcBAQSBpzCBpDBzBggr
+BgEFBQcwAoZnaHR0cDovL3d3dy5taWNyb3NvZnQuY29tL3BraW9wcy9jZXJ0cy9N
+aWNyb3NvZnQlMjBBenVyZSUyMFJTQSUyMFRMUyUyMElzc3VpbmclMjBDQSUyMDA4
+JTIwLSUyMHhzaWduLmNydDAtBggrBgEFBQcwAYYhaHR0cDovL29uZW9jc3AubWlj
+cm9zb2Z0LmNvbS9vY3NwMB0GA1UdDgQWBBS8L4sD4PAxSFxBzS/QnRVpvpGWAzAO
+BgNVHQ8BAf8EBAMCBaAwOwYDVR0RBDQwMoIYKi5vbmVyb3V0ZS5taWNyb3NvZnQu
+Y29tghZvbmVyb3V0ZS5taWNyb3NvZnQuY29tMAwGA1UdEwEB/wQCMAAwagYDVR0f
+BGMwYTBfoF2gW4ZZaHR0cDovL3d3dy5taWNyb3NvZnQuY29tL3BraW9wcy9jcmwv
+TWljcm9zb2Z0JTIwQXp1cmUlMjBSU0ElMjBUTFMlMjBJc3N1aW5nJTIwQ0ElMjAw
+OC5jcmwwZgYDVR0gBF8wXTBRBgwrBgEEAYI3TIN9AQEwQTA/BggrBgEFBQcCARYz
+aHR0cDovL3d3dy5taWNyb3NvZnQuY29tL3BraW9wcy9Eb2NzL1JlcG9zaXRvcnku
+aHRtMAgGBmeBDAECAjAfBgNVHSMEGDAWgBT2fi+9gKNKsnBb69+aH9jtymGABzAd
+BgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwDQYJKoZIhvcNAQEMBQADggIB
+AAkBU+f8v6xxq3w5m8ICTbC7VEFi70GtgSL1w7MqOG5vezevKyKPe2i4jxcn66Dh
+JGPPtqNQLwCXAIEjRvxvUcJzsN9vzECIixPNmzGWCKbPp4YBYpU5I7Y/QE//ApCe
+ozGdYlOpUa7o+VpS/gcc5OkTkReKk2iP5EytagaDeDtVEMkFfkG0/7ymBQ/4eiUw
+ehRQXmThcLXwGmOFt+LoyL0WU3cte4licZikjxQqti8oWRO/HRhAo/E+UIJzGUJY
+guT/wCoiBDXTFKLv+zCFDMPF05rYXWoVoHPTXNXCirX6hkDiyAEZUHM1szthNahb
+Y609q+ThJyL1WMCDPwm2nUihQdYHBh78F3iBm6BDM2DdpWLR875xsipH70C1eYGq
+cNME0PzMnVzKUufJPVa2DTTrpyRCiIWq1/drJs5OvthzlFC/MXfh8lP3Lv1/bppz
+tPM0orPk1DKBCYxD6ZWWWzpD+CCMxMDJEVfAZsJLpxa5SgArVan3hDYlDowbjMFs
+dn6iKzi/qlKt7PTy/9ts3gbYVahRJXK1WVPUkRfT8S1t/2JdWtAYOPLfUHmOFllR
+DAF3sKPzXl1+tR8SzDex5e8/iRlKwiY8CXEWh7R4ZfvO5oWFB/9fVJbpXZG5xtOK
+a1EgT1iqYApA254ILrN/j29/JU4d9I5iI4y5Cl8hAb4e
+-----END CERTIFICATE-----
+ 1 s:C=US, O=Microsoft Corporation, CN=Microsoft Azure RSA TLS Issuing CA 08
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Global Root G2
+   a:PKEY: rsaEncryption, 4096 (bit); sigalg: RSA-SHA384
+   v:NotBefore: Jun  8 00:00:00 2023 GMT; NotAfter: Aug 25 23:59:59 2026 GMT
+-----BEGIN CERTIFICATE-----
+MIIFrDCCBJSgAwIBAgIQDvt+VH7fD/EGmu5XaW17oDANBgkqhkiG9w0BAQwFADBh
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBH
+MjAeFw0yMzA2MDgwMDAwMDBaFw0yNjA4MjUyMzU5NTlaMF0xCzAJBgNVBAYTAlVT
+MR4wHAYDVQQKExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xLjAsBgNVBAMTJU1pY3Jv
+c29mdCBBenVyZSBSU0EgVExTIElzc3VpbmcgQ0EgMDgwggIiMA0GCSqGSIb3DQEB
+AQUAA4ICDwAwggIKAoICAQCy7oIFzcDVZVbomWZtSwrAX8LiKXsbCcwuFL7FHkD5
+m67olmOdTueOKhNER5ykFs/meKG1fwzd35/+Q1+KTxcV89IIXmErtSsj8EWu7rdE
+AVYnYMFbstqwkIVNEoz4OIM82hn+N5p57zkHGPogzF6TOPRUOK8yYyCPeqnHvoVp
+E5b0kZL4QT8bdyhSRQbUsUiSaOuF5y3eZ9Vc92baDkhY7CFZE2ThLLv5PQ0WxzLo
+t3t18d2vQP5x29I0n6NFsj37J2d/EH/Z6a/lhAVzKjfYloGcQ1IPyDEIGh9gYJnM
+LFZiUbm/GBmlpKVr8M03OWKCR0thRbfnU6UoskrwGrECAnnojFEUw+j8i6gFLBNW
+XtBOtYvgl8SHCCVKUUUl4YOfR5zF4OkKirJuUbOmB2AOmLjYJIcabDvxMcmryhQi
+nog+/+jgHJnY62opgStkdaImMPzyLB7ZaWVnxpRdtFKO1ZvGkZeRNvbPAUKR2kNe
+knuh3NtFvz2dY3xP7AfhyLE/t8vW72nAzlRKz++L70CgCvj/yeObPwaAPDd2sZ0o
+j2u/N+k6egGq04e+GBW+QYCSoJ5eAY36il0fu7dYSHYDo7RB5aPTLqnybp8wMeAa
+tcagc8U9OM42ghELTaWFARuyoCmgqR7y8fAU9Njhcqrm6+0Xzv/vzMfhL4Ulpf1G
+7wIDAQABo4IBYjCCAV4wEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHQ4EFgQU9n4v
+vYCjSrJwW+vfmh/Y7cphgAcwHwYDVR0jBBgwFoAUTiJUIBiV5uNu5g/6+rkS7QYX
+jzkwDgYDVR0PAQH/BAQDAgGGMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcD
+AjB2BggrBgEFBQcBAQRqMGgwJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmRpZ2lj
+ZXJ0LmNvbTBABggrBgEFBQcwAoY0aHR0cDovL2NhY2VydHMuZGlnaWNlcnQuY29t
+L0RpZ2lDZXJ0R2xvYmFsUm9vdEcyLmNydDBCBgNVHR8EOzA5MDegNaAzhjFodHRw
+Oi8vY3JsMy5kaWdpY2VydC5jb20vRGlnaUNlcnRHbG9iYWxSb290RzIuY3JsMB0G
+A1UdIAQWMBQwCAYGZ4EMAQIBMAgGBmeBDAECAjANBgkqhkiG9w0BAQwFAAOCAQEA
+loABcB94CeH6DWKwa4550BTzLxlTHVNseQJ5SetnPpBuPNLPgOLe9Y7ZMn4ZK6mh
+feK7RiMzan4UF9CD5rF3TcCevo3IxrdV+YfBwvlbGYv+6JmX3mAMlaUb23Y2pONo
+ixFJEOcAMKKR55mSC5W4nQ6jDfp7Qy/504MQpdjJflk90RHsIZGXVPw/JdbBp0w6
+pDb4o5CqydmZqZMrEvbGk1p8kegFkBekp/5WVfd86BdH2xs+GKO3hyiA8iBrBCGJ
+fqrijbRnZm7q5+ydXF3jhJDJWfxW5EBYZBJrUz/a+8K/78BjwI8z2VYJpG4t6r4o
+tOGB5sEyDPDwqx00Rouu8g==
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=C=US, ST=WA, L=Redmond, O=Microsoft Corporation, CN=*.oneroute.microsoft.com
+issuer=C=US, O=Microsoft Corporation, CN=Microsoft Azure RSA TLS Issuing CA 08
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 4194 bytes and written 523 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 2048 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+
+---------- READABLE FORMAT ----------
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            33:00:a4:8b:52:f7:4d:94:44:c6:8b:1b:d6:00:00:00:a4:8b:52
+        Signature Algorithm: sha384WithRSAEncryption
+        Issuer: C=US, O=Microsoft Corporation, CN=Microsoft Azure RSA TLS Issuing CA 08
+        Validity
+            Not Before: Oct 25 02:40:26 2024 GMT
+            Not After : Apr 23 02:40:26 2025 GMT
+        Subject: C=US, ST=WA, L=Redmond, O=Microsoft Corporation, CN=*.oneroute.microsoft.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:a8:b7:0b:01:75:f5:a3:dc:17:d8:42:3b:77:a5:
+                    d0:1e:10:df:ad:89:b7:01:76:6d:0b:a4:bd:a2:ec:
+                    b1:c1:fa:de:53:44:5b:b9:2f:45:3a:73:8a:9d:56:
+                    34:ba:d7:22:64:77:c1:38:5e:e4:80:7a:62:48:1d:
+                    d9:39:ab:d7:b0:bb:af:3d:b5:8a:f8:44:62:e2:49:
+                    1c:a9:bb:ac:63:7c:19:d5:b3:df:41:ad:b4:42:2c:
+                    78:70:9e:84:13:bc:78:fe:1a:d1:9e:4e:57:78:8f:
+                    b7:60:1a:b2:0a:b3:c1:08:e6:c6:19:b1:d4:c8:87:
+                    1d:b6:56:67:c8:3a:27:50:87:d4:8b:4a:46:62:c3:
+                    f6:c0:dc:06:44:04:60:2f:41:17:d0:7e:23:9d:c9:
+                    01:e7:55:95:2e:ba:4a:4d:af:ba:47:91:47:2a:02:
+                    7e:16:fc:d9:59:cf:5d:33:59:ca:b1:24:05:9c:27:
+                    08:23:eb:a3:ef:ab:cb:4c:fa:36:21:ca:b8:28:49:
+                    01:59:3c:2b:6b:6e:b0:86:a9:b7:0b:31:77:78:08:
+                    cb:39:3b:51:0c:cf:01:24:8f:cd:4f:d7:47:7d:ce:
+                    df:00:50:0a:e1:a2:85:d0:24:b9:83:76:b9:49:58:
+                    58:7c:09:98:02:f7:2a:6e:07:a7:b6:e1:d1:27:7d:
+                    ff:bd
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            CT Precertificate SCTs: 
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:
+                                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF
+                    Timestamp : Oct 25 02:50:29.575 2024 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:46:02:21:00:DC:6D:7B:62:10:94:D5:9B:14:8F:33:
+                                DF:1A:1E:E7:96:87:21:B6:7C:C2:CA:42:24:D2:89:35:
+                                1F:F9:29:80:F5:02:21:00:FE:E7:3D:87:D9:0E:76:0E:
+                                FB:E9:AD:F4:10:02:E2:2E:45:DE:FC:0F:8D:40:3C:02:
+                                B1:8C:75:BA:3B:5D:2C:01
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:
+                                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8
+                    Timestamp : Oct 25 02:50:30.240 2024 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:45:02:20:29:B6:34:D7:09:2C:54:31:C1:32:6F:1C:
+                                0B:BF:3A:30:56:F0:E8:4F:A1:A8:11:A9:25:F8:0D:EC:
+                                DF:88:9C:25:02:21:00:AB:41:AE:4A:92:32:22:FB:31:
+                                64:24:96:A1:E1:4D:D8:B0:52:BF:6D:C4:4D:7F:11:94:
+                                4D:B1:C4:0A:05:12:3B
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : E0:92:B3:FC:0C:1D:C8:E7:68:36:1F:DE:61:B9:96:4D:
+                                0A:52:78:19:8A:72:D6:72:C4:B0:4D:A5:6D:6F:54:04
+                    Timestamp : Oct 25 02:50:29.767 2024 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:44:02:20:5E:96:3F:78:E8:CC:05:90:31:CE:06:60:
+                                E3:72:A1:EA:84:3C:67:98:68:1D:82:38:5A:FD:1D:6F:
+                                22:08:5F:68:02:20:37:AE:0F:66:12:95:81:9E:71:6B:
+                                64:C4:B3:4E:21:4A:DF:74:CF:1A:51:62:88:99:D7:DC:
+                                25:27:94:E3:AB:3F
+            Microsoft Application Policies Extension: 
+                0.0
+..+.......0
+..+.......
+            Microsoft certificate template: 
+                0-.%+.....7.........F...........]...0......d..-
+            Authority Information Access: 
+                CA Issuers - URI:http://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20RSA%20TLS%20Issuing%20CA%2008%20-%20xsign.crt
+                OCSP - URI:http://oneocsp.microsoft.com/ocsp
+            X509v3 Subject Key Identifier: 
+                BC:2F:8B:03:E0:F0:31:48:5C:41:CD:2F:D0:9D:15:69:BE:91:96:03
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                DNS:*.oneroute.microsoft.com, DNS:oneroute.microsoft.com
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://www.microsoft.com/pkiops/crl/Microsoft%20Azure%20RSA%20TLS%20Issuing%20CA%2008.crl
+            X509v3 Certificate Policies: 
+                Policy: 1.3.6.1.4.1.311.76.509.1.1
+                  CPS: http://www.microsoft.com/pkiops/Docs/Repository.htm
+                Policy: 2.23.140.1.2.2
+            X509v3 Authority Key Identifier: 
+                F6:7E:2F:BD:80:A3:4A:B2:70:5B:EB:DF:9A:1F:D8:ED:CA:61:80:07
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, TLS Web Server Authentication
+    Signature Algorithm: sha384WithRSAEncryption
+    Signature Value:
+        09:01:53:e7:fc:bf:ac:71:ab:7c:39:9b:c2:02:4d:b0:bb:54:
+        41:62:ef:41:ad:81:22:f5:c3:b3:2a:38:6e:6f:7b:37:af:2b:
+        22:8f:7b:68:b8:8f:17:27:eb:a0:e1:24:63:cf:b6:a3:50:2f:
+        00:97:00:81:23:46:fc:6f:51:c2:73:b0:df:6f:cc:40:88:8b:
+        13:cd:9b:31:96:08:a6:cf:a7:86:01:62:95:39:23:b6:3f:40:
+        4f:ff:02:90:9e:a3:31:9d:62:53:a9:51:ae:e8:f9:5a:52:fe:
+        07:1c:e4:e9:13:91:17:8a:93:68:8f:e4:4c:ad:6a:06:83:78:
+        3b:55:10:c9:05:7e:41:b4:ff:bc:a6:05:0f:f8:7a:25:30:7a:
+        14:50:5e:64:e1:70:b5:f0:1a:63:85:b7:e2:e8:c8:bd:16:53:
+        77:2d:7b:89:62:71:98:a4:8f:14:2a:b6:2f:28:59:13:bf:1d:
+        18:40:a3:f1:3e:50:82:73:19:42:58:82:e4:ff:c0:2a:22:04:
+        35:d3:14:a2:ef:fb:30:85:0c:c3:c5:d3:9a:d8:5d:6a:15:a0:
+        73:d3:5c:d5:c2:8a:b5:fa:86:40:e2:c8:01:19:50:73:35:b3:
+        3b:61:35:a8:5b:63:ad:3d:ab:e4:e1:27:22:f5:58:c0:83:3f:
+        09:b6:9d:48:a1:41:d6:07:06:1e:fc:17:78:81:9b:a0:43:33:
+        60:dd:a5:62:d1:f3:be:71:b2:2a:47:ef:40:b5:79:81:aa:70:
+        d3:04:d0:fc:cc:9d:5c:ca:52:e7:c9:3d:56:b6:0d:34:eb:a7:
+        24:42:88:85:aa:d7:f7:6b:26:ce:4e:be:d8:73:94:50:bf:31:
+        77:e1:f2:53:f7:2e:fd:7f:6e:9a:73:b4:f3:34:a2:b3:e4:d4:
+        32:81:09:8c:43:e9:95:96:5b:3a:43:f8:20:8c:c4:c0:c9:11:
+        57:c0:66:c2:4b:a7:16:b9:4a:00:2b:55:a9:f7:84:36:25:0e:
+        8c:1b:8c:c1:6c:76:7e:a2:2b:38:bf:aa:52:ad:ec:f4:f2:ff:
+        db:6c:de:06:d8:55:a8:51:25:72:b5:59:53:d4:91:17:d3:f1:
+        2d:6d:ff:62:5d:5a:d0:18:38:f2:df:50:79:8e:16:59:51:0c:
+        01:77:b0:a3:f3:5e:5d:7e:b5:1f:12:cc:37:b1:e5:ef:3f:89:
+        19:4a:c2:26:3c:09:71:16:87:b4:78:65:fb:ce:e6:85:85:07:
+        ff:5f:54:96:e9:5d:91:b9:c6:d3:8a:6b:51:20:4f:58:aa:60:
+        0a:40:db:9e:08:2e:b3:7f:8f:6f:7f:25:4e:1d:f4:8e:62:23:
+        8c:b9:0a:5f:21:01:be:1e

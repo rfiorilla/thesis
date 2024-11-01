@@ -1,0 +1,146 @@
+---------- ORIGINAL FORMAT ----------
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:C=US, ST=California, L=Sunnyvale, O=LinkedIn Corporation, CN=www.linkedin.cn
+   i:C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Feb 14 00:00:00 2024 GMT; NotAfter: Feb 14 23:59:59 2025 GMT
+-----BEGIN CERTIFICATE-----
+MIIJ+TCCCOGgAwIBAgIQBL73DYvmpbWJqY6ruQcu8DANBgkqhkiG9w0BAQsFADBZ
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTMwMQYDVQQDEypE
+aWdpQ2VydCBHbG9iYWwgRzIgVExTIFJTQSBTSEEyNTYgMjAyMCBDQTEwHhcNMjQw
+MjE0MDAwMDAwWhcNMjUwMjE0MjM1OTU5WjBvMQswCQYDVQQGEwJVUzETMBEGA1UE
+CBMKQ2FsaWZvcm5pYTESMBAGA1UEBxMJU3Vubnl2YWxlMR0wGwYDVQQKExRMaW5r
+ZWRJbiBDb3Jwb3JhdGlvbjEYMBYGA1UEAxMPd3d3LmxpbmtlZGluLmNuMIIBIjAN
+BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0vibOTExCiAxufsMAAc46hOw6Vn3
+eHWD/iXWwIXiFkdEbXPuLvvyHus+XyuNgR/v50R6nBcAbtRScDaZ4zIgY/NKlCiH
+fCbz5o3qBi9l6csuDji1DEvEOpW0wpC8ybFEisWvdtIsR+JwpmpzraAVGcRglMbX
+ZUyrtS+GfbyWhZY5QNR3lQ1Zo3yWm/MKCebu+rPToK5UPyaI0c8HSiokZ3yq9P2H
+D04VtvGHToYxTVCt0k8y7dnjv7Q2SRcpur7m0EFe6Hg9OvR4+m9+81WCKGHZIsy3
+sOOwLF68MS/OcdB4p/yp7bwqWKBL4oCv0mvCrtArLZT7ZIPlFZ7Zp+1FUQIDAQAB
+o4IGpTCCBqEwHwYDVR0jBBgwFoAUdIWAwGbH3zfez70pN6oDHb7tzRcwHQYDVR0O
+BBYEFGDusj1XTrpEGn4oy6clEkECCZ20MIIDMQYDVR0RBIIDKDCCAySCD3d3dy5s
+aW5rZWRpbi5jboIad3d3LmRldmVsb3Blci5saW5rZWRpbi5jb22CH3BvcC1hei1z
+aC1sb3IxLnd3dy5saW5rZWRpbi5jb22CGXd3dy5sZWFybmluZy5saW5rZWRpbi5j
+b22CF2RldmVsb3BlcnMubGlua2VkaW4uY29tght3d3cuZGV2ZWxvcGVycy5saW5r
+ZWRpbi5jb22CH3BvcC1hei1zaC1sdmExLnd3dy5saW5rZWRpbi5jb22CE2RjLmFk
+cy5saW5rZWRpbi5jb22CGXJlYWx0aW1lLnd3dy5saW5rZWRpbi5jb22CDGxpbmtl
+ZGluLmNvbYIVbGVhcm5pbmcubGlua2VkaW4uY29tghdydW0xMC5wZXJmLmxpbmtl
+ZGluLmNvbYIWZGV2ZWxvcGVyLmxpbmtlZGluLmNvbYIfcG9wLWF6LXNoLWx0eDEu
+d3d3LmxpbmtlZGluLmNvbYIUcHguam9icy5saW5rZWRpbi5jb22CGnBvcC1hei1z
+aC53d3cubGlua2VkaW4uY29tghJweC5hZHMubGlua2VkaW4uY26CD2N2Lmxpbmtl
+ZGluLmNvbYISYWJvdXQubGlua2VkaW4uY29tgh9wb3AtYXotYmUtbG9yMS53d3cu
+bGlua2VkaW4uY29tgh9wb3AtYXotYmUtbHR4MS53d3cubGlua2VkaW4uY29tghRw
+cml2YWN5LmxpbmtlZGluLmNvbYIZd3d3LmJ1c2luZXNzLmxpbmtlZGluLmNvbYIT
+cHguYWRzLmxpbmtlZGluLmNvbYIVYnVzaW5lc3MubGlua2VkaW4uY29tghpwb3At
+YXotYmUud3d3LmxpbmtlZGluLmNvbYIRYy53d3cubGlua2VkaW4uY26CGGVuZ2lu
+ZWVyaW5nLmxpbmtlZGluLmNvbYILbGlua2VkaW4uY26CD2NuLmxpbmtlZGluLmNv
+bYIXcnVtMTMucGVyZi5saW5rZWRpbi5jb22CEHd3dy5saW5rZWRpbi5jb22CH3Bv
+cC1hei1iZS1sdmExLnd3dy5saW5rZWRpbi5jb20wPgYDVR0gBDcwNTAzBgZngQwB
+AgIwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3dy5kaWdpY2VydC5jb20vQ1BTMA4G
+A1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwgZ8G
+A1UdHwSBlzCBlDBIoEagRIZCaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL0RpZ2lD
+ZXJ0R2xvYmFsRzJUTFNSU0FTSEEyNTYyMDIwQ0ExLTEuY3JsMEigRqBEhkJodHRw
+Oi8vY3JsNC5kaWdpY2VydC5jb20vRGlnaUNlcnRHbG9iYWxHMlRMU1JTQVNIQTI1
+NjIwMjBDQTEtMS5jcmwwgYcGCCsGAQUFBwEBBHsweTAkBggrBgEFBQcwAYYYaHR0
+cDovL29jc3AuZGlnaWNlcnQuY29tMFEGCCsGAQUFBzAChkVodHRwOi8vY2FjZXJ0
+cy5kaWdpY2VydC5jb20vRGlnaUNlcnRHbG9iYWxHMlRMU1JTQVNIQTI1NjIwMjBD
+QTEtMS5jcnQwDAYDVR0TAQH/BAIwADCCAX8GCisGAQQB1nkCBAIEggFvBIIBawFp
+AHcATnWjJ1yaEMM4W2zU3z9S6x3w4I4bjWnAsfpksWKaOd8AAAGNphnoLwAABAMA
+SDBGAiEAvdrj6o9o6hyTVXFkKQZ6xHPMWZ6EQQv6ZP9FKigVNOECIQDGWghKnVPQ
+RQzsa6WWAykqABTyoPp9vbKE06Lf2g0UEgB2AH1ZHhLheCp7HGFnfF79+NCHXBSg
+TpWeuQMv2Q6MLnm4AAABjaYZ6GwAAAQDAEcwRQIgJDmzchpYd783rog2M/bDzzCs
+CSby5j0IHeuX+sndQ50CIQCMPaxs9d7q/7XYW5XI5CQm3+jf4P2cmwx9KtNWm2RX
+ogB2AObSMWNAd4zBEEEG13G5zsHSQPaWhIb7uocyHf0eN45QAAABjaYZ6JYAAAQD
+AEcwRQIgek2A7n2PO8hXhhsWkEXz1lEpan2S/Sv9k6QmYlYqMMwCIQD/aQ4qOQHj
+UjCrHE++txN+EhCQxlau22isLJeDV8H78TANBgkqhkiG9w0BAQsFAAOCAQEAvjNy
+YYSP88J6zSh3xB9FIgIZ7vDfnMimQhd7GYgY4OOBesNkmvAQoOcGQsdkB+ZYulXQ
+P+seS9HT7feoV4r6YVRMPI1upryEPe5wOyGWYjNjAKy+xNPY3b0zgcYbYkKlua5s
+GwWhtgx8P2eJrs/bR93KzF6juAcp3tRPq+FBk53TwI1oORHvEfhd38tKAhZuWSI2
+xtVat7mJMQt26jEzMe3Aqj8eSkMfbEPTs+08ZGnXh28s7EMH4AMLBDlVBY7E2Qp+
+sRuF6g6Zt5+3Kcrvg1i2HGBN150G91a9+N2OkqHRhgaNWHHSewBi2sI7jTY/6tSp
+xv6UYVw2n7ezQIdNrw==
+-----END CERTIFICATE-----
+ 1 s:C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Global Root G2
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Mar 30 00:00:00 2021 GMT; NotAfter: Mar 29 23:59:59 2031 GMT
+-----BEGIN CERTIFICATE-----
+MIIEyDCCA7CgAwIBAgIQDPW9BitWAvR6uFAsI8zwZjANBgkqhkiG9w0BAQsFADBh
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBH
+MjAeFw0yMTAzMzAwMDAwMDBaFw0zMTAzMjkyMzU5NTlaMFkxCzAJBgNVBAYTAlVT
+MRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxMzAxBgNVBAMTKkRpZ2lDZXJ0IEdsb2Jh
+bCBHMiBUTFMgUlNBIFNIQTI1NiAyMDIwIENBMTCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBAMz3EGJPprtjb+2QUlbFbSd7ehJWivH0+dbn4Y+9lavyYEEV
+cNsSAPonCrVXOFt9slGTcZUOakGUWzUb+nv6u8W+JDD+Vu/E832X4xT1FE3LpxDy
+FuqrIvAxIhFhaZAmunjZlx/jfWardUSVc8is/+9dCopZQ+GssjoP80j812s3wWPc
+3kbW20X+fSP9kOhRBx5Ro1/tSUZUfyyIxfQTnJcVPAPooTncaQwywa8WV0yUR0J8
+osicfebUTVSvQpmowQTCd5zWSOTOEeAqgJnwQ3DPP3Zr0UxJqyRewg2C/Uaoq2yT
+zGJSQnWS+Jr6Xl6ysGHlHx+5fwmY6D36g39HaaECAwEAAaOCAYIwggF+MBIGA1Ud
+EwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFHSFgMBmx9833s+9KTeqAx2+7c0XMB8G
+A1UdIwQYMBaAFE4iVCAYlebjbuYP+vq5Eu0GF485MA4GA1UdDwEB/wQEAwIBhjAd
+BgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwdgYIKwYBBQUHAQEEajBoMCQG
+CCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wQAYIKwYBBQUHMAKG
+NGh0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydEdsb2JhbFJvb3RH
+Mi5jcnQwQgYDVR0fBDswOTA3oDWgM4YxaHR0cDovL2NybDMuZGlnaWNlcnQuY29t
+L0RpZ2lDZXJ0R2xvYmFsUm9vdEcyLmNybDA9BgNVHSAENjA0MAsGCWCGSAGG/WwC
+ATAHBgVngQwBATAIBgZngQwBAgEwCAYGZ4EMAQICMAgGBmeBDAECAzANBgkqhkiG
+9w0BAQsFAAOCAQEAkPFwyyiXaZd8dP3A+iZ7U6utzWX9upwGnIrXWkOH7U1MVl+t
+wcW1BSAuWdH/SvWgKtiwla3JLko716f2b4gp/DA/JIS7w7d7kwcsr4drdjPtAFVS
+slme5LnQ89/nD/7d+MS5EHKBCQRfz5eeLjJ1js+aWNJXMX43AYGyZm0pGrFmCW3R
+bpD0ufovARTFXFZkAdl9h6g4U5+LXUZtXMYnhIHUfoyMo5tS58aI7Dd8KvvwVVo4
+chDYABPPTHPbqjc1qCmBaZx2vN4Ye5DUys/vZwP9BFohFrH/6j/f3IL16/RZkiMN
+JCqVJUzKoZHm1Lesh3Sz8W2jmdv51b2EQJ8HmA==
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=C=US, ST=California, L=Sunnyvale, O=LinkedIn Corporation, CN=www.linkedin.cn
+issuer=C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
+---
+No client certificate CA names sent
+Peer signing digest: SHA512
+Peer signature type: RSA
+Server Temp Key: ECDH, prime256v1, 256 bits
+---
+SSL handshake has read 4478 bytes and written 589 bytes
+Verification: OK
+---
+New, TLSv1.2, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES256-GCM-SHA384
+    Session-ID: 3CC267508F2553329830973C82EE65B7FC730AECC39E9531101D3D415C9272F3
+    Session-ID-ctx: 
+    Master-Key: B307A5FE8DFF3F48B195E4D7D7AF184A9760EA5080F2CCC3BC800A41CB03DDA63FCD35BE1EE39260F1BC9B4F6FEE5AD2
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 300 (seconds)
+    TLS session ticket:
+    0000 - 5b a0 fe 29 07 fe 7a de-58 d1 7e 87 88 6d 00 fb   [..)..z.X.~..m..
+    0010 - 49 e0 cc 4e 58 80 ed c8-51 15 d9 88 64 90 fe 9f   I..NX...Q...d...
+    0020 - 0d 80 11 b7 48 ea dd ac-59 29 bf 58 c8 10 c2 43   ....H...Y).X...C
+    0030 - 4c 81 dc aa 8e f1 6b 3f-cf a3 49 7a b7 7b 60 01   L.....k?..Iz.{`.
+    0040 - 3c a2 b9 f2 98 6d 58 d6-e5 15 f7 12 1c 7a be 8f   <....mX......z..
+    0050 - 59 e7 1a 7f a1 06 b1 9e-1a bf ed e5 35 4a cd 33   Y...........5J.3
+    0060 - c8 20 9d ab 47 9f 7a 63-1f 8e 77 dc 4f f9 ba 93   . ..G.zc..w.O...
+    0070 - e8 e5 a8 69 65 88 77 f7-1c 0e 74 82 96 04 6b 50   ...ie.w...t...kP
+    0080 - 38 88 bb 5b 58 e7 f0 79-44 85 8c 64 fb 40 46 1c   8..[X..yD..d.@F.
+    0090 - e2 52 04 b8 bc d1 d0 bf-d3 bd d2 3e bd 8b d9 29   .R.........>...)
+    00a0 - 7f 13 2d 52 f3 be ff 25-14 51 9b 44 98 ae 36 1f   ..-R...%.Q.D..6.
+    00b0 - f6 a4 57 16 84 9c 96 6d-52 5c c8 83 48 5a ae 85   ..W....mR\..HZ..
+
+    Start Time: 1730490391
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+---
+
+---------- READABLE FORMAT ----------

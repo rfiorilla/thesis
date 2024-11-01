@@ -1,0 +1,216 @@
+---------- ORIGINAL FORMAT ----------
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:C=US, ST=California, L=Menlo Park, O=Meta Platforms, Inc., CN=*.secure.latest.facebook.com
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Aug 11 00:00:00 2024 GMT; NotAfter: Nov  9 23:59:59 2024 GMT
+-----BEGIN CERTIFICATE-----
+MIIG/DCCBeSgAwIBAgIQARrkOQO9qQh+HcpdaKS9VjANBgkqhkiG9w0BAQsFADBw
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMS8wLQYDVQQDEyZEaWdpQ2VydCBTSEEyIEhpZ2ggQXNz
+dXJhbmNlIFNlcnZlciBDQTAeFw0yNDA4MTEwMDAwMDBaFw0yNDExMDkyMzU5NTla
+MH0xCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRMwEQYDVQQHEwpN
+ZW5sbyBQYXJrMR0wGwYDVQQKExRNZXRhIFBsYXRmb3JtcywgSW5jLjElMCMGA1UE
+AwwcKi5zZWN1cmUubGF0ZXN0LmZhY2Vib29rLmNvbTCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBAL3lpIw1SW19+6kAIrB6uaFbts7x1g3wYHrKdVvj0FNa
+K7fXRBB6eJX91i6VAYicFzhB4IprqxMndZA0fEvdxReNRBd5ImxsI4i0zbaUAz2H
+2fxS5HULlRgQwrlhLg9uakvD31itRr3Uu+4cfbGqARpnvEAQixlImUu67cBKU1BL
+7cvlCxhZ0ucS4rAqc2B+zHIMPGcJOC/oD/UJSSjVE9aQOMWEhhhwaPc/uRAAtYoB
+K7zCTsBvKHLsmyRPAwDxYiEQE8LMhKhHBiVsNGNC0WJXzG9fkL9JQqlkyeqGILyx
+OeJ9K/OSX3AO2XL+m3mpefGkyWVXbONZX1pk6N05tXsCAwEAAaOCA4MwggN/MB8G
+A1UdIwQYMBaAFFFo/5CvAgd1PMzZZWRiohK4WXI7MB0GA1UdDgQWBBTqjykPyhLg
+R3s0povNLVSrhZ2lFjBDBgNVHREEPDA6ghwqLnNlY3VyZS5sYXRlc3QuZmFjZWJv
+b2suY29tghpzZWN1cmUubGF0ZXN0LmZhY2Vib29rLmNvbTA+BgNVHSAENzA1MDMG
+BmeBDAECAjApMCcGCCsGAQUFBwIBFhtodHRwOi8vd3d3LmRpZ2ljZXJ0LmNvbS9D
+UFMwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcD
+AjB1BgNVHR8EbjBsMDSgMqAwhi5odHRwOi8vY3JsMy5kaWdpY2VydC5jb20vc2hh
+Mi1oYS1zZXJ2ZXItZzYuY3JsMDSgMqAwhi5odHRwOi8vY3JsNC5kaWdpY2VydC5j
+b20vc2hhMi1oYS1zZXJ2ZXItZzYuY3JsMIGDBggrBgEFBQcBAQR3MHUwJAYIKwYB
+BQUHMAGGGGh0dHA6Ly9vY3NwLmRpZ2ljZXJ0LmNvbTBNBggrBgEFBQcwAoZBaHR0
+cDovL2NhY2VydHMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0U0hBMkhpZ2hBc3N1cmFu
+Y2VTZXJ2ZXJDQS5jcnQwDAYDVR0TAQH/BAIwADCCAXwGCisGAQQB1nkCBAIEggFs
+BIIBaAFmAHYA7s3QZNXbGs7FXLedtM0TojKHRny87N7DUUhZRnEftZsAAAGRPsbd
+ugAABAMARzBFAiATzmxJ2tN0SmMla9SAwbyJCzshfQyWNEexE6vBj3AEowIhAOuK
+sMt+SNyrT/H9whyK7h4dIhbQiuOBe6mnO8f1tJS8AHUA2ra/az+1tiKfm8K7XGvo
+cJFxbLtRhIU0vaQ9MEjX+6sAAAGRPsbddQAABAMARjBEAiAkfiJr102FW/ierRWa
+wCAs7SMMt661BL/hn0JYccXDkAIgAvUe3gfIMXvXU39molxIakN61BHVbNfKo/Kb
+bTIA0nQAdQA/F0tP1yJHWJQdZRyEvg0S7ZA3fx+FauvBvyiF7PhkbgAAAZE+xt4S
+AAAEAwBGMEQCIE+NHJF9HGI4KuzuTr9DuU833L0W5sxGfKhxqlzL3zXuAiA4G592
+NDGsoe0Vi/FI8WRFJXFmBK3hQlV6JaMKK8CbOzANBgkqhkiG9w0BAQsFAAOCAQEA
+Ea1bJVeS2g2BvihJFc+3dedIcKVC51yEngTw2iC7j3+LeAUqYuK4fwJek2StQ/bE
+hxE/HegV3rOvAfKfHEo8jTGEkG9v0oCrTPdoayeq1s2cTpDbiUkSnTKcpzTGtO6+
+7MR5XsYPqnBR80ZXjLZncZAd6jVJFUBoXxvhlSDrr+vASyMx4uSzKfDWsV2O21IB
+rSxpCoizmTfRbOwcQ68WkCMmXYYRUZ5uN6e9wptnyaF8oyx9HjVVrQafyPMXmaC/
+m4VqQchdZJ9k8bMtDpi+S2HcLWUya2mk70oYT81HPrUsm+izMlCaSoUSRXwhe+D/
+Sd7d5EhRFnhoTJ8j13VFGA==
+-----END CERTIFICATE-----
+ 1 s:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert High Assurance EV Root CA
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Oct 22 12:00:00 2013 GMT; NotAfter: Oct 22 12:00:00 2028 GMT
+-----BEGIN CERTIFICATE-----
+MIIEsTCCA5mgAwIBAgIQBOHnpNxc8vNtwCtCuF0VnzANBgkqhkiG9w0BAQsFADBs
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMSswKQYDVQQDEyJEaWdpQ2VydCBIaWdoIEFzc3VyYW5j
+ZSBFViBSb290IENBMB4XDTEzMTAyMjEyMDAwMFoXDTI4MTAyMjEyMDAwMFowcDEL
+MAkGA1UEBhMCVVMxFTATBgNVBAoTDERpZ2lDZXJ0IEluYzEZMBcGA1UECxMQd3d3
+LmRpZ2ljZXJ0LmNvbTEvMC0GA1UEAxMmRGlnaUNlcnQgU0hBMiBIaWdoIEFzc3Vy
+YW5jZSBTZXJ2ZXIgQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC2
+4C/CJAbIbQRf1+8KZAayfSImZRauQkCbztyfn3YHPsMwVYcZuU+UDlqUH1VWtMIC
+Kq/QmO4LQNfE0DtyyBSe75CxEamu0si4QzrZCwvV1ZX1QK/IHe1NnF9Xt4ZQaJn1
+itrSxwUfqJfJ3KSxgoQtxq2lnMcZgqaFD15EWCo3j/018QsIJzJa9buLnqS9UdAn
+4t07QjOjBSjEuyjMmqwrIw14xnvmXnG3Sj4I+4G3FhahnSMSTeXXkgisdaScus0X
+sh5ENWV/UyU50RwKmmMbGZJ0aAo3wsJSSMs5WqK24V3B3aAguCGikyZvFEohQcft
+bZvySC/zA/WiaJJTL17jAgMBAAGjggFJMIIBRTASBgNVHRMBAf8ECDAGAQH/AgEA
+MA4GA1UdDwEB/wQEAwIBhjAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIw
+NAYIKwYBBQUHAQEEKDAmMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2Vy
+dC5jb20wSwYDVR0fBEQwQjBAoD6gPIY6aHR0cDovL2NybDQuZGlnaWNlcnQuY29t
+L0RpZ2lDZXJ0SGlnaEFzc3VyYW5jZUVWUm9vdENBLmNybDA9BgNVHSAENjA0MDIG
+BFUdIAAwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93d3cuZGlnaWNlcnQuY29tL0NQ
+UzAdBgNVHQ4EFgQUUWj/kK8CB3U8zNllZGKiErhZcjswHwYDVR0jBBgwFoAUsT7D
+aQP4v0cB1JgmGggC72NkK8MwDQYJKoZIhvcNAQELBQADggEBABiKlYkD5m3fXPwd
+aOpKj4PWUS+Na0QWnqxj9dJubISZi6qBcYRb7TROsLd5kinMLYBq8I4g4Xmk/gNH
+E+r1hspZcX30BJZr01lYPf7TMSVcGDiEo+afgv2MW5gxTs14nhr9hctJqvIni5ly
+/D6q1UEL2tU2ob8cbkdJf17ZSHwD2f2LSaCYJkJA69aSEaRkCldUxPUd1gJea6zu
+xICaEnL6VpPX/78whQYwvwt/Tv9XBZ0k7YXDK/umdaisLRbvfXknsuvCnQsH6qqF
+0wGjIChBWUMo0oHjqvbsezt3tkBigAVBRQHvFwY+3sAzm2fTYS5yh+Rp/BIAV0Ae
+cPUeybQ=
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=C=US, ST=California, L=Menlo Park, O=Meta Platforms, Inc., CN=*.secure.latest.facebook.com
+issuer=C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 2726 bytes and written 524 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_CHACHA20_POLY1305_SHA256
+Server public key is 2048 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+
+---------- READABLE FORMAT ----------
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            01:1a:e4:39:03:bd:a9:08:7e:1d:ca:5d:68:a4:bd:56
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA
+        Validity
+            Not Before: Aug 11 00:00:00 2024 GMT
+            Not After : Nov  9 23:59:59 2024 GMT
+        Subject: C=US, ST=California, L=Menlo Park, O=Meta Platforms, Inc., CN=*.secure.latest.facebook.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:bd:e5:a4:8c:35:49:6d:7d:fb:a9:00:22:b0:7a:
+                    b9:a1:5b:b6:ce:f1:d6:0d:f0:60:7a:ca:75:5b:e3:
+                    d0:53:5a:2b:b7:d7:44:10:7a:78:95:fd:d6:2e:95:
+                    01:88:9c:17:38:41:e0:8a:6b:ab:13:27:75:90:34:
+                    7c:4b:dd:c5:17:8d:44:17:79:22:6c:6c:23:88:b4:
+                    cd:b6:94:03:3d:87:d9:fc:52:e4:75:0b:95:18:10:
+                    c2:b9:61:2e:0f:6e:6a:4b:c3:df:58:ad:46:bd:d4:
+                    bb:ee:1c:7d:b1:aa:01:1a:67:bc:40:10:8b:19:48:
+                    99:4b:ba:ed:c0:4a:53:50:4b:ed:cb:e5:0b:18:59:
+                    d2:e7:12:e2:b0:2a:73:60:7e:cc:72:0c:3c:67:09:
+                    38:2f:e8:0f:f5:09:49:28:d5:13:d6:90:38:c5:84:
+                    86:18:70:68:f7:3f:b9:10:00:b5:8a:01:2b:bc:c2:
+                    4e:c0:6f:28:72:ec:9b:24:4f:03:00:f1:62:21:10:
+                    13:c2:cc:84:a8:47:06:25:6c:34:63:42:d1:62:57:
+                    cc:6f:5f:90:bf:49:42:a9:64:c9:ea:86:20:bc:b1:
+                    39:e2:7d:2b:f3:92:5f:70:0e:d9:72:fe:9b:79:a9:
+                    79:f1:a4:c9:65:57:6c:e3:59:5f:5a:64:e8:dd:39:
+                    b5:7b
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                51:68:FF:90:AF:02:07:75:3C:CC:D9:65:64:62:A2:12:B8:59:72:3B
+            X509v3 Subject Key Identifier: 
+                EA:8F:29:0F:CA:12:E0:47:7B:34:A6:8B:CD:2D:54:AB:85:9D:A5:16
+            X509v3 Subject Alternative Name: 
+                DNS:*.secure.latest.facebook.com, DNS:secure.latest.facebook.com
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.2
+                  CPS: http://www.digicert.com/CPS
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://crl3.digicert.com/sha2-ha-server-g6.crl
+                Full Name:
+                  URI:http://crl4.digicert.com/sha2-ha-server-g6.crl
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.digicert.com
+                CA Issuers - URI:http://cacerts.digicert.com/DigiCertSHA2HighAssuranceServerCA.crt
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            CT Precertificate SCTs: 
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : EE:CD:D0:64:D5:DB:1A:CE:C5:5C:B7:9D:B4:CD:13:A2:
+                                32:87:46:7C:BC:EC:DE:C3:51:48:59:46:71:1F:B5:9B
+                    Timestamp : Aug 11 00:11:45.978 2024 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:45:02:20:13:CE:6C:49:DA:D3:74:4A:63:25:6B:D4:
+                                80:C1:BC:89:0B:3B:21:7D:0C:96:34:47:B1:13:AB:C1:
+                                8F:70:04:A3:02:21:00:EB:8A:B0:CB:7E:48:DC:AB:4F:
+                                F1:FD:C2:1C:8A:EE:1E:1D:22:16:D0:8A:E3:81:7B:A9:
+                                A7:3B:C7:F5:B4:94:BC
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : DA:B6:BF:6B:3F:B5:B6:22:9F:9B:C2:BB:5C:6B:E8:70:
+                                91:71:6C:BB:51:84:85:34:BD:A4:3D:30:48:D7:FB:AB
+                    Timestamp : Aug 11 00:11:45.909 2024 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:44:02:20:24:7E:22:6B:D7:4D:85:5B:F8:9E:AD:15:
+                                9A:C0:20:2C:ED:23:0C:B7:AE:B5:04:BF:E1:9F:42:58:
+                                71:C5:C3:90:02:20:02:F5:1E:DE:07:C8:31:7B:D7:53:
+                                7F:66:A2:5C:48:6A:43:7A:D4:11:D5:6C:D7:CA:A3:F2:
+                                9B:6D:32:00:D2:74
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:
+                                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E
+                    Timestamp : Aug 11 00:11:46.066 2024 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:44:02:20:4F:8D:1C:91:7D:1C:62:38:2A:EC:EE:4E:
+                                BF:43:B9:4F:37:DC:BD:16:E6:CC:46:7C:A8:71:AA:5C:
+                                CB:DF:35:EE:02:20:38:1B:9F:76:34:31:AC:A1:ED:15:
+                                8B:F1:48:F1:64:45:25:71:66:04:AD:E1:42:55:7A:25:
+                                A3:0A:2B:C0:9B:3B
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        11:ad:5b:25:57:92:da:0d:81:be:28:49:15:cf:b7:75:e7:48:
+        70:a5:42:e7:5c:84:9e:04:f0:da:20:bb:8f:7f:8b:78:05:2a:
+        62:e2:b8:7f:02:5e:93:64:ad:43:f6:c4:87:11:3f:1d:e8:15:
+        de:b3:af:01:f2:9f:1c:4a:3c:8d:31:84:90:6f:6f:d2:80:ab:
+        4c:f7:68:6b:27:aa:d6:cd:9c:4e:90:db:89:49:12:9d:32:9c:
+        a7:34:c6:b4:ee:be:ec:c4:79:5e:c6:0f:aa:70:51:f3:46:57:
+        8c:b6:67:71:90:1d:ea:35:49:15:40:68:5f:1b:e1:95:20:eb:
+        af:eb:c0:4b:23:31:e2:e4:b3:29:f0:d6:b1:5d:8e:db:52:01:
+        ad:2c:69:0a:88:b3:99:37:d1:6c:ec:1c:43:af:16:90:23:26:
+        5d:86:11:51:9e:6e:37:a7:bd:c2:9b:67:c9:a1:7c:a3:2c:7d:
+        1e:35:55:ad:06:9f:c8:f3:17:99:a0:bf:9b:85:6a:41:c8:5d:
+        64:9f:64:f1:b3:2d:0e:98:be:4b:61:dc:2d:65:32:6b:69:a4:
+        ef:4a:18:4f:cd:47:3e:b5:2c:9b:e8:b3:32:50:9a:4a:85:12:
+        45:7c:21:7b:e0:ff:49:de:dd:e4:48:51:16:78:68:4c:9f:23:
+        d7:75:45:18

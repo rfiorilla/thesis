@@ -1,0 +1,113 @@
+---------- ORIGINAL FORMAT ----------
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=lencr.org
+   i:C=US, O=Let's Encrypt, CN=E5
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA384
+   v:NotBefore: Oct  8 15:33:56 2024 GMT; NotAfter: Jan  6 15:33:55 2025 GMT
+-----BEGIN CERTIFICATE-----
+MIIDzzCCA1SgAwIBAgISA8s5uU5LLudMX/qXx2Fi3LKAMAoGCCqGSM49BAMDMDIx
+CzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJF
+NTAeFw0yNDEwMDgxNTMzNTZaFw0yNTAxMDYxNTMzNTVaMBQxEjAQBgNVBAMTCWxl
+bmNyLm9yZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABDmzC2F0U7Y51+frBZNk
+mJYdXksUAU+OHCVuCtEZu8MoKFGEfZax/hkJDmjV9Z87+JVypHH1VCWNWlhzLWRL
+14+jggJmMIICYjAOBgNVHQ8BAf8EBAMCB4AwHQYDVR0lBBYwFAYIKwYBBQUHAwEG
+CCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFAPKq53PnsJfJaWFupMY
+fPr3WIhRMB8GA1UdIwQYMBaAFJ8rX888IU+dBLftKyzExnCL0tcNMFUGCCsGAQUF
+BwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL2U1Lm8ubGVuY3Iub3JnMCIGCCsG
+AQUFBzAChhZodHRwOi8vZTUuaS5sZW5jci5vcmcvMG8GA1UdEQRoMGaCCWxlbmNy
+Lm9yZ4IPbGV0c2VuY3J5cHQuY29tgg9sZXRzZW5jcnlwdC5vcmeCDXd3dy5sZW5j
+ci5vcmeCE3d3dy5sZXRzZW5jcnlwdC5jb22CE3d3dy5sZXRzZW5jcnlwdC5vcmcw
+EwYDVR0gBAwwCjAIBgZngQwBAgEwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdwA/
+F0tP1yJHWJQdZRyEvg0S7ZA3fx+FauvBvyiF7PhkbgAAAZJs+Yz4AAAEAwBIMEYC
+IQCoFGuTXFv3aL9BRYtTh9xtHETIupGWvN8mH9NBfkvQxAIhAMVnMCUPwA1Q017h
+nNagnerXm7aBo2g0C6omMaNH6CVEAHUAzxFW7tUufK/zh1vZaS6b6RpxZ0qwF+ys
+AdJbd87MOwgAAAGSbPmNNgAABAMARjBEAiAiqgDKWthEqTVoeBu/yaJf+Sz3XNuU
+ruDpcsMV78Gg8AIgM4F+TxV56CeC+CKj10mNYHuN9GidCbcVAbiCLo3sKakwCgYI
+KoZIzj0EAwMDaQAwZgIxAIEhOBvgyEGsJjWAV+BXMDKSjPKTbzF8AcuKeKpXHa8p
+Mj2qsDBQ7dIGaOumtXhSgAIxALi/YI5V1ZZrxOHFvsDEet+Bp+yeq4qYDOh742j5
+BP24cQ0CFircUS9Mx/3KfW730A==
+-----END CERTIFICATE-----
+ 1 s:C=US, O=Let's Encrypt, CN=E5
+   i:C=US, O=Internet Security Research Group, CN=ISRG Root X1
+   a:PKEY: id-ecPublicKey, 384 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Mar 13 00:00:00 2024 GMT; NotAfter: Mar 12 23:59:59 2027 GMT
+-----BEGIN CERTIFICATE-----
+MIIEVzCCAj+gAwIBAgIRAIOPbGPOsTmMYgZigxXJ/d4wDQYJKoZIhvcNAQELBQAw
+TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh
+cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjQwMzEzMDAwMDAw
+WhcNMjcwMzEyMjM1OTU5WjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3Mg
+RW5jcnlwdDELMAkGA1UEAxMCRTUwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAAQNCzqK
+a2GOtu/cX1jnxkJFVKtj9mZhSAouWXW0gQI3ULc/FnncmOyhKJdyIBwsz9V8UiBO
+VHhbhBRrwJCuhezAUUE8Wod/Bk3U/mDR+mwt4X2VEIiiCFQPmRpM5uoKrNijgfgw
+gfUwDgYDVR0PAQH/BAQDAgGGMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcD
+ATASBgNVHRMBAf8ECDAGAQH/AgEAMB0GA1UdDgQWBBSfK1/PPCFPnQS37SssxMZw
+i9LXDTAfBgNVHSMEGDAWgBR5tFnme7bl5AFzgAiIyBpY9umbbjAyBggrBgEFBQcB
+AQQmMCQwIgYIKwYBBQUHMAKGFmh0dHA6Ly94MS5pLmxlbmNyLm9yZy8wEwYDVR0g
+BAwwCjAIBgZngQwBAgEwJwYDVR0fBCAwHjAcoBqgGIYWaHR0cDovL3gxLmMubGVu
+Y3Iub3JnLzANBgkqhkiG9w0BAQsFAAOCAgEAH3KdNEVCQdqk0LKyuNImTKdRJY1C
+2uw2SJajuhqkyGPY8C+zzsufZ+mgnhnq1A2KVQOSykOEnUbx1cy637rBAihx97r+
+bcwbZM6sTDIaEriR/PLk6LKs9Be0uoVxgOKDcpG9svD33J+G9Lcfv1K9luDmSTgG
+6XNFIN5vfI5gs/lMPyojEMdIzK9blcl2/1vKxO8WGCcjvsQ1nJ/Pwt8LQZBfOFyV
+XP8ubAp/au3dc4EKWG9MO5zcx1qT9+NXRGdVWxGvmBFRAajciMfXME1ZuGmk3/GO
+koAM7ZkjZmleyokP1LGzmfJcUd9s7eeu1/9/eg5XlXd/55GtYjAM+C4DG5i7eaNq
+cm2F+yxYIPt6cbbtYVNJCGfHWqHEQ4FYStUyFnv8sjyqU8ypgZaNJ9aVcWSICLOI
+E1/Qv/7oKsnZCWJ926wU6RqG1OYPGOi1zuABhLw61cuPVDT28nQS/e6z95cJXq0e
+K1BcaJ6fJZsmbjRgD5p3mvEf5vdQM7MCEvU0tHbsx2I5mHHJoABHb8KVBgWp/lcX
+GWiWaeOyB7RP+OfDtvi2OsapxXiV7vNVs7fMlrRjY1joKaqmmycnBvAq14AEbtyL
+sVfOS66B8apkeFX2NY4XPEYV4ZSCe8VHPrdrERk2wILG3T/EGmSIkCYVUMSnjmJd
+VQD9F6Na/+zmXCc=
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=CN=lencr.org
+issuer=C=US, O=Let's Encrypt, CN=E5
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 2453 bytes and written 526 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 256 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_128_GCM_SHA256
+    Session-ID: ABB0E3A2BEDF937AD38517A781AF026A1EC2054D9471B2255EBAFB87684A68AD
+    Session-ID-ctx: 
+    Resumption PSK: F885CB3458C006FEE81CE976C4D10D973EBF2862AAB381AFD74137086116D548
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 604800 (seconds)
+    TLS session ticket:
+    0000 - 84 99 73 71 85 eb 60 b2-8d 71 76 00 07 79 d7 1b   ..sq..`..qv..y..
+    0010 - 73 ef 4c c1 42 3b 5c 21-3b 2c 33 42 c3 1f b2 2d   s.L.B;\!;,3B...-
+    0020 - 39 b6 bd d4 56 e7 85 51-a5 16 a2 25 fc 8c 26 fc   9...V..Q...%..&.
+    0030 - 5a 50 85 56 0d 72 94 9b-4e d0 67 73 ec 8e ec 9c   ZP.V.r..N.gs....
+    0040 - f8 c5 2d 70 64 85 17 d8-ba 34 17 5c 2f 1b c1 0e   ..-pd....4.\/...
+    0050 - 9d 06 20 c4 7e 3d 2c 8f-db 19 4a 10 c1 78 3e cc   .. .~=,...J..x>.
+    0060 - 5a 82 4e 5f ce 36 93 21-a3                        Z.N_.6.!.
+
+    Start Time: 1730490823
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK
+
+---------- READABLE FORMAT ----------

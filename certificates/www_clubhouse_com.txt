@@ -1,0 +1,212 @@
+---------- ORIGINAL FORMAT ----------
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=www.minghui.org
+   i:C=US, O=Let's Encrypt, CN=R11
+   a:PKEY: rsaEncryption, 4096 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Oct 26 04:03:03 2024 GMT; NotAfter: Jan 24 04:03:02 2025 GMT
+-----BEGIN CERTIFICATE-----
+MIIGODCCBSCgAwIBAgISAyWbhpvGSihx2/KJm49przpqMA0GCSqGSIb3DQEBCwUA
+MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD
+EwNSMTEwHhcNMjQxMDI2MDQwMzAzWhcNMjUwMTI0MDQwMzAyWjAaMRgwFgYDVQQD
+Ew93d3cubWluZ2h1aS5vcmcwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoIC
+AQC7ToAr+DnuyHXoxGfpS9z9DizKIcXRQ6N6ipHGb9MkZe3sIu7FFCvw/lIr/ert
+cwrG1tcLiG7UdICglYu0Zo4C1gzl0c9MCs9gw21Af1VpWnlrixkC4cKeiIs4u1MZ
+1MuVfWZT1+Za19+wJrqAieMHNVwQUPf6uhQF9Rr3hfkhdjPQJnl5bZd3L3NhDOnS
+peCs5nhfKKg7yTudxs7eekdZ5a4nvChEy9hxTbUxiaXHWbJYiccRVibebpl/fYxm
+U2sDhyMUV+yrp11WweoqMiuyRGcBiJu1tIYJ2Rv8kbSnHcMFzgG1GW1alhkkvpEV
+PAdVsihkBiQxBJIJgX8/1tUm0hU3zFLchjgA1ZcaQ8uRhbfW/Xt2YhY7G5cSORO3
+/k3GH/8I71bxHrwvQzNmf0ZZ6FZNZ4a4vNwxEqezsbYRMjEd0eqSMPg0bii+lnPN
+6zoGpKu1wEbixJuk1lhrN6dPKIAifzz16eXhSXx2DZqE9/Jlit5+O65MOYD1naAn
+Y6GOzEJWAfJ/yy1rRWqEqoMFS6LWOVCTd6AxHT1shELygzMSVDaFLoUYLA+V7yNC
+N2OSizk4VAa4hHLblW3Gl7vvway3Ll5M6oUGaHrTzfy8Ie81GX6/2/q/WxnXTqdC
+KhAnTgkciV5dRpEaVdo2ipBFoawT3dpqohuIJ1ZCov76yQIDAQABo4ICXTCCAlkw
+DgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAM
+BgNVHRMBAf8EAjAAMB0GA1UdDgQWBBRZBIGobJFTp+WMF1Y0bATrfLSMAjAfBgNV
+HSMEGDAWgBTFz0ak6vTDwHpslcQtsF6SLybjuTBXBggrBgEFBQcBAQRLMEkwIgYI
+KwYBBQUHMAGGFmh0dHA6Ly9yMTEuby5sZW5jci5vcmcwIwYIKwYBBQUHMAKGF2h0
+dHA6Ly9yMTEuaS5sZW5jci5vcmcvMGMGA1UdEQRcMFqCDW0ubWluZ2h1aS5vcmeC
+Dm10Lm1pbmdodWkub3JnghJzZWFyY2gubWluZ2h1aS5vcmeCFHNlYXJjaGI1Lm1p
+bmdodWkub3Jngg93d3cubWluZ2h1aS5vcmcwEwYDVR0gBAwwCjAIBgZngQwBAgEw
+ggEFBgorBgEEAdZ5AgQCBIH2BIHzAPEAdgDgkrP8DB3I52g2H95huZZNClJ4GYpy
+1nLEsE2lbW9UBAAAAZLHM39KAAAEAwBHMEUCIQDD6LZaVo+brAJaWJDKw9x2oWEL
+LWo3jzIpc+h6qnWBYwIgG8rlqO0HBisvfxP/wNXAjNTvsQnNKI5QjIgtWf5zBLMA
+dwDPEVbu1S58r/OHW9lpLpvpGnFnSrAX7KwB0lt3zsw7CAAAAZLHM3+IAAAEAwBI
+MEYCIQCW1XG2ls1z6HD3bw+/6WjVchgQ5WhOG2HPaJPxe7QFKQIhAL1eSmyTD7fq
+l4AnpCq1oWq5df6ZYGO08o/RQLfJ1y2sMA0GCSqGSIb3DQEBCwUAA4IBAQBnbACm
+NcCSiWq5r65VoqmlwOw5WF++NgEejOvtDwHQYpRsLCcz3/K0vLGpWrUvTS+WfJnd
+IZV2R1/IjmaGVL1H8zytIPldsJEOpZVE21Z4fnJXRW8JVJpl8hYpYa2/NM09RxRW
+23cD/NLRKqpeTFItImZGJFKXpO+pnMBQQ2+0eIezTAg5Lhgqrx0KF5grUvTyRDCf
+ZICorCVJWZmjKC7hatvr40Gn6Cthq0egxdUn/QKnwOiIshM8bKnoayRNAB2uhJwx
+AJ2vaU/FquIyITIbU01A9UQyUZTyA6eKTwE8Vr4qdp/yoa4KXb0emaIV35o7SNXd
+rFuk6l7w/FGBIa9F
+-----END CERTIFICATE-----
+ 1 s:C=US, O=Let's Encrypt, CN=R11
+   i:C=US, O=Internet Security Research Group, CN=ISRG Root X1
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Mar 13 00:00:00 2024 GMT; NotAfter: Mar 12 23:59:59 2027 GMT
+-----BEGIN CERTIFICATE-----
+MIIFBjCCAu6gAwIBAgIRAIp9PhPWLzDvI4a9KQdrNPgwDQYJKoZIhvcNAQELBQAw
+TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh
+cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjQwMzEzMDAwMDAw
+WhcNMjcwMzEyMjM1OTU5WjAzMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3Mg
+RW5jcnlwdDEMMAoGA1UEAxMDUjExMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAuoe8XBsAOcvKCs3UZxD5ATylTqVhyybKUvsVAbe5KPUoHu0nsyQYOWcJ
+DAjs4DqwO3cOvfPlOVRBDE6uQdaZdN5R2+97/1i9qLcT9t4x1fJyyXJqC4N0lZxG
+AGQUmfOx2SLZzaiSqhwmej/+71gFewiVgdtxD4774zEJuwm+UE1fj5F2PVqdnoPy
+6cRms+EGZkNIGIBloDcYmpuEMpexsr3E+BUAnSeI++JjF5ZsmydnS8TbKF5pwnnw
+SVzgJFDhxLyhBax7QG0AtMJBP6dYuC/FXJuluwme8f7rsIU5/agK70XEeOtlKsLP
+Xzze41xNG/cLJyuqC0J3U095ah2H2QIDAQABo4H4MIH1MA4GA1UdDwEB/wQEAwIB
+hjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwEgYDVR0TAQH/BAgwBgEB
+/wIBADAdBgNVHQ4EFgQUxc9GpOr0w8B6bJXELbBeki8m47kwHwYDVR0jBBgwFoAU
+ebRZ5nu25eQBc4AIiMgaWPbpm24wMgYIKwYBBQUHAQEEJjAkMCIGCCsGAQUFBzAC
+hhZodHRwOi8veDEuaS5sZW5jci5vcmcvMBMGA1UdIAQMMAowCAYGZ4EMAQIBMCcG
+A1UdHwQgMB4wHKAaoBiGFmh0dHA6Ly94MS5jLmxlbmNyLm9yZy8wDQYJKoZIhvcN
+AQELBQADggIBAE7iiV0KAxyQOND1H/lxXPjDj7I3iHpvsCUf7b632IYGjukJhM1y
+v4Hz/MrPU0jtvfZpQtSlET41yBOykh0FX+ou1Nj4ScOt9ZmWnO8m2OG0JAtIIE38
+01S0qcYhyOE2G/93ZCkXufBL713qzXnQv5C/viOykNpKqUgxdKlEC+Hi9i2DcaR1
+e9KUwQUZRhy5j/PEdEglKg3l9dtD4tuTm7kZtB8v32oOjzHTYw+7KdzdZiw/sBtn
+UfhBPORNuay4pJxmY/WrhSMdzFO2q3Gu3MUBcdo27goYKjL9CTF8j/Zz55yctUoV
+aneCWs/ajUX+HypkBTA+c8LGDLnWO2NKq0YD/pnARkAnYGPfUDoHR9gVSp/qRx+Z
+WghiDLZsMwhN1zjtSC0uBWiugF3vTNzYIEFfaPG7Ws3jDrAMMYebQ95JQ+HIBD/R
+PBuHRTBpqKlyDnkSHDHYPiNX3adPoPAcgdF3H2/W0rmoswMWgTlLn1Wu0mrks7/q
+pdWfS6PJ1jty80r2VKsM/Dj3YIDfbjXKdaFU5C+8bhfJGqU3taKauuz0wHVGT3eo
+6FlWkWYtbt4pgdamlwVeZEW+LM7qZEJEsMNPrfC03APKmZsJgpWCDWOKZvkZcvjV
+uYkQ4omYCTX5ohy+knMjdOmdH9c7SpqEWBDC86fiNex+O0XOMEZSa8DA
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=CN=www.minghui.org
+issuer=C=US, O=Let's Encrypt, CN=R11
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 3707 bytes and written 544 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 4096 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+
+---------- READABLE FORMAT ----------
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            03:25:9b:86:9b:c6:4a:28:71:db:f2:89:9b:8f:69:af:3a:6a
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=US, O=Let's Encrypt, CN=R11
+        Validity
+            Not Before: Oct 26 04:03:03 2024 GMT
+            Not After : Jan 24 04:03:02 2025 GMT
+        Subject: CN=www.minghui.org
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+                Modulus:
+                    00:bb:4e:80:2b:f8:39:ee:c8:75:e8:c4:67:e9:4b:
+                    dc:fd:0e:2c:ca:21:c5:d1:43:a3:7a:8a:91:c6:6f:
+                    d3:24:65:ed:ec:22:ee:c5:14:2b:f0:fe:52:2b:fd:
+                    ea:ed:73:0a:c6:d6:d7:0b:88:6e:d4:74:80:a0:95:
+                    8b:b4:66:8e:02:d6:0c:e5:d1:cf:4c:0a:cf:60:c3:
+                    6d:40:7f:55:69:5a:79:6b:8b:19:02:e1:c2:9e:88:
+                    8b:38:bb:53:19:d4:cb:95:7d:66:53:d7:e6:5a:d7:
+                    df:b0:26:ba:80:89:e3:07:35:5c:10:50:f7:fa:ba:
+                    14:05:f5:1a:f7:85:f9:21:76:33:d0:26:79:79:6d:
+                    97:77:2f:73:61:0c:e9:d2:a5:e0:ac:e6:78:5f:28:
+                    a8:3b:c9:3b:9d:c6:ce:de:7a:47:59:e5:ae:27:bc:
+                    28:44:cb:d8:71:4d:b5:31:89:a5:c7:59:b2:58:89:
+                    c7:11:56:26:de:6e:99:7f:7d:8c:66:53:6b:03:87:
+                    23:14:57:ec:ab:a7:5d:56:c1:ea:2a:32:2b:b2:44:
+                    67:01:88:9b:b5:b4:86:09:d9:1b:fc:91:b4:a7:1d:
+                    c3:05:ce:01:b5:19:6d:5a:96:19:24:be:91:15:3c:
+                    07:55:b2:28:64:06:24:31:04:92:09:81:7f:3f:d6:
+                    d5:26:d2:15:37:cc:52:dc:86:38:00:d5:97:1a:43:
+                    cb:91:85:b7:d6:fd:7b:76:62:16:3b:1b:97:12:39:
+                    13:b7:fe:4d:c6:1f:ff:08:ef:56:f1:1e:bc:2f:43:
+                    33:66:7f:46:59:e8:56:4d:67:86:b8:bc:dc:31:12:
+                    a7:b3:b1:b6:11:32:31:1d:d1:ea:92:30:f8:34:6e:
+                    28:be:96:73:cd:eb:3a:06:a4:ab:b5:c0:46:e2:c4:
+                    9b:a4:d6:58:6b:37:a7:4f:28:80:22:7f:3c:f5:e9:
+                    e5:e1:49:7c:76:0d:9a:84:f7:f2:65:8a:de:7e:3b:
+                    ae:4c:39:80:f5:9d:a0:27:63:a1:8e:cc:42:56:01:
+                    f2:7f:cb:2d:6b:45:6a:84:aa:83:05:4b:a2:d6:39:
+                    50:93:77:a0:31:1d:3d:6c:84:42:f2:83:33:12:54:
+                    36:85:2e:85:18:2c:0f:95:ef:23:42:37:63:92:8b:
+                    39:38:54:06:b8:84:72:db:95:6d:c6:97:bb:ef:c1:
+                    ac:b7:2e:5e:4c:ea:85:06:68:7a:d3:cd:fc:bc:21:
+                    ef:35:19:7e:bf:db:fa:bf:5b:19:d7:4e:a7:42:2a:
+                    10:27:4e:09:1c:89:5e:5d:46:91:1a:55:da:36:8a:
+                    90:45:a1:ac:13:dd:da:6a:a2:1b:88:27:56:42:a2:
+                    fe:fa:c9
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                59:04:81:A8:6C:91:53:A7:E5:8C:17:56:34:6C:04:EB:7C:B4:8C:02
+            X509v3 Authority Key Identifier: 
+                C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9
+            Authority Information Access: 
+                OCSP - URI:http://r11.o.lencr.org
+                CA Issuers - URI:http://r11.i.lencr.org/
+            X509v3 Subject Alternative Name: 
+                DNS:m.minghui.org, DNS:mt.minghui.org, DNS:search.minghui.org, DNS:searchb5.minghui.org, DNS:www.minghui.org
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.1
+            CT Precertificate SCTs: 
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : E0:92:B3:FC:0C:1D:C8:E7:68:36:1F:DE:61:B9:96:4D:
+                                0A:52:78:19:8A:72:D6:72:C4:B0:4D:A5:6D:6F:54:04
+                    Timestamp : Oct 26 05:01:33.898 2024 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:45:02:21:00:C3:E8:B6:5A:56:8F:9B:AC:02:5A:58:
+                                90:CA:C3:DC:76:A1:61:0B:2D:6A:37:8F:32:29:73:E8:
+                                7A:AA:75:81:63:02:20:1B:CA:E5:A8:ED:07:06:2B:2F:
+                                7F:13:FF:C0:D5:C0:8C:D4:EF:B1:09:CD:28:8E:50:8C:
+                                88:2D:59:FE:73:04:B3
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:
+                                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08
+                    Timestamp : Oct 26 05:01:33.960 2024 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:46:02:21:00:96:D5:71:B6:96:CD:73:E8:70:F7:6F:
+                                0F:BF:E9:68:D5:72:18:10:E5:68:4E:1B:61:CF:68:93:
+                                F1:7B:B4:05:29:02:21:00:BD:5E:4A:6C:93:0F:B7:EA:
+                                97:80:27:A4:2A:B5:A1:6A:B9:75:FE:99:60:63:B4:F2:
+                                8F:D1:40:B7:C9:D7:2D:AC
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        67:6c:00:a6:35:c0:92:89:6a:b9:af:ae:55:a2:a9:a5:c0:ec:
+        39:58:5f:be:36:01:1e:8c:eb:ed:0f:01:d0:62:94:6c:2c:27:
+        33:df:f2:b4:bc:b1:a9:5a:b5:2f:4d:2f:96:7c:99:dd:21:95:
+        76:47:5f:c8:8e:66:86:54:bd:47:f3:3c:ad:20:f9:5d:b0:91:
+        0e:a5:95:44:db:56:78:7e:72:57:45:6f:09:54:9a:65:f2:16:
+        29:61:ad:bf:34:cd:3d:47:14:56:db:77:03:fc:d2:d1:2a:aa:
+        5e:4c:52:2d:22:66:46:24:52:97:a4:ef:a9:9c:c0:50:43:6f:
+        b4:78:87:b3:4c:08:39:2e:18:2a:af:1d:0a:17:98:2b:52:f4:
+        f2:44:30:9f:64:80:a8:ac:25:49:59:99:a3:28:2e:e1:6a:db:
+        eb:e3:41:a7:e8:2b:61:ab:47:a0:c5:d5:27:fd:02:a7:c0:e8:
+        88:b2:13:3c:6c:a9:e8:6b:24:4d:00:1d:ae:84:9c:31:00:9d:
+        af:69:4f:c5:aa:e2:32:21:32:1b:53:4d:40:f5:44:32:51:94:
+        f2:03:a7:8a:4f:01:3c:56:be:2a:76:9f:f2:a1:ae:0a:5d:bd:
+        1e:99:a2:15:df:9a:3b:48:d5:dd:ac:5b:a4:ea:5e:f0:fc:51:
+        81:21:af:45

@@ -1,0 +1,218 @@
+---------- ORIGINAL FORMAT ----------
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:C=US, ST=California, L=Menlo Park, O=Meta Platforms, Inc., CN=*.atlassolutions.com
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Aug 11 00:00:00 2024 GMT; NotAfter: Nov  9 23:59:59 2024 GMT
+-----BEGIN CERTIFICATE-----
+MIIHXzCCBkegAwIBAgIQDBHf8RTsWNCvqbk+Zl5kWDANBgkqhkiG9w0BAQsFADBw
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMS8wLQYDVQQDEyZEaWdpQ2VydCBTSEEyIEhpZ2ggQXNz
+dXJhbmNlIFNlcnZlciBDQTAeFw0yNDA4MTEwMDAwMDBaFw0yNDExMDkyMzU5NTla
+MHUxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRMwEQYDVQQHEwpN
+ZW5sbyBQYXJrMR0wGwYDVQQKExRNZXRhIFBsYXRmb3JtcywgSW5jLjEdMBsGA1UE
+AwwUKi5hdGxhc3NvbHV0aW9ucy5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDm2UQjOZ2I1Hh2XVm/uFs2l1zwd22GpiYP0aBTxV+ulk0A9HqnMUl6
+TBES1FMWyfZX8SFyWErL0/1Zzo/EmJMyxjpv80jNVkQa5Spy04OsT8R+3SRnw1q6
+Ji9KHJg7yOqEO+h3on9i3e54KH7tJLcD5UEzggE5k3VrXxNqOkmyl9noEwetZR8y
+4nKm5OL+tQ67WycSpXQ4NK3xjqJ4ppg1R/VMkyacs9dLyClcQg00qYBv+nE7tDDh
+59c4vafL7bWdkA6kab6YZA+3ND4ckksZ5u9RXEoFTDziSUqx+GfBxZ5MnYaucGxE
+Cd9/KsXSsX+2LFBHj0jfkGCJk+KQqTmlAgMBAAGjggPuMIID6jAfBgNVHSMEGDAW
+gBRRaP+QrwIHdTzM2WVkYqISuFlyOzAdBgNVHQ4EFgQUKmk1awXfrtfQGgHauEV1
+HJg6d2UwgakGA1UdEQSBoTCBnoIUKi5hdGxhc3NvbHV0aW9ucy5jb22CCyouYXRk
+bXQuY29tggwqLmF0ZG10Mi5jb22CDiouYXRsYXNzYnguY29tghEqLnh4LmF0bGFz
+c2J4LmNvbYIJYXRkbXQuY29tggphdGRtdDIuY29tggxhdGxhc3NieC5jb22CEmF0
+bGFzc29sdXRpb25zLmNvbYIPeHguYXRsYXNzYnguY29tMD4GA1UdIAQ3MDUwMwYG
+Z4EMAQICMCkwJwYIKwYBBQUHAgEWG2h0dHA6Ly93d3cuZGlnaWNlcnQuY29tL0NQ
+UzAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMC
+MHUGA1UdHwRuMGwwNKAyoDCGLmh0dHA6Ly9jcmwzLmRpZ2ljZXJ0LmNvbS9zaGEy
+LWhhLXNlcnZlci1nNi5jcmwwNKAyoDCGLmh0dHA6Ly9jcmw0LmRpZ2ljZXJ0LmNv
+bS9zaGEyLWhhLXNlcnZlci1nNi5jcmwwgYMGCCsGAQUFBwEBBHcwdTAkBggrBgEF
+BQcwAYYYaHR0cDovL29jc3AuZGlnaWNlcnQuY29tME0GCCsGAQUFBzAChkFodHRw
+Oi8vY2FjZXJ0cy5kaWdpY2VydC5jb20vRGlnaUNlcnRTSEEySGlnaEFzc3VyYW5j
+ZVNlcnZlckNBLmNydDAMBgNVHRMBAf8EAjAAMIIBgAYKKwYBBAHWeQIEAgSCAXAE
+ggFsAWoAdwDuzdBk1dsazsVct520zROiModGfLzs3sNRSFlGcR+1mwAAAZE+zze4
+AAAEAwBIMEYCIQCz1bWVtOzA3Y/J0LGMgaDr3rWWMdoeS0jr9ZM11+dTHgIhAJwK
+lEsmH4TzY6qbctji6mQ8BwGydWeJemAq4UcMnJ9FAHcA2ra/az+1tiKfm8K7XGvo
+cJFxbLtRhIU0vaQ9MEjX+6sAAAGRPs84lgAABAMASDBGAiEA/3+Q78sqUKpyxhcr
+lkrlU0xsWUKq7gFWhsXIPtARLQ0CIQDQtyYukAFnuchrZqMaZ8frltImhyrS0T2Q
+qyPZT11efAB2AHb/iD8KtvuVUcJhzPWHujS0pM27KdxoQgqf5mdMWjp0AAABkT7P
+N/EAAAQDAEcwRQIhANc6bgW7ZaPzNSCwR0/To6ZT3lpRz4Tq326uUIZ5oRfkAiB3
+sATeawFV87IzijgSzgNaRCfEd4H/7z+FU/UaEHBcgDANBgkqhkiG9w0BAQsFAAOC
+AQEADRyhLWpHgy558TTO63sMvmk8JyFxBa+3FGBN+hK7kNekREuXFGp4mkb2x5kf
+GqXLK/1RlzV6+yd1BOsGNFhb8Dyl/cQOJtUt3k3RxwiYWimPbHxFTXcEr8qKkvjI
+Y9LTEL0FpfrrRFfv4O8bfbDmpYVZtTbIEl66ao9BchcWtFXy3zS5t01usdQXb0A2
+k9yC8tW8z8G8HIQBKeuLMIb6M2eBb+rhPuDLu2qSTJGQQ9Q46h5jThgqPgkDHYfV
+jyDAlKDFEOBVYV+QgIJBH+xSycMIMG5CJ2UaDtInJMZcuaNctG3urSkUqtlTKfwc
+6jk2hpjXxJ0sqxIHuOmrz5b46g==
+-----END CERTIFICATE-----
+ 1 s:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert High Assurance EV Root CA
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Oct 22 12:00:00 2013 GMT; NotAfter: Oct 22 12:00:00 2028 GMT
+-----BEGIN CERTIFICATE-----
+MIIEsTCCA5mgAwIBAgIQBOHnpNxc8vNtwCtCuF0VnzANBgkqhkiG9w0BAQsFADBs
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMSswKQYDVQQDEyJEaWdpQ2VydCBIaWdoIEFzc3VyYW5j
+ZSBFViBSb290IENBMB4XDTEzMTAyMjEyMDAwMFoXDTI4MTAyMjEyMDAwMFowcDEL
+MAkGA1UEBhMCVVMxFTATBgNVBAoTDERpZ2lDZXJ0IEluYzEZMBcGA1UECxMQd3d3
+LmRpZ2ljZXJ0LmNvbTEvMC0GA1UEAxMmRGlnaUNlcnQgU0hBMiBIaWdoIEFzc3Vy
+YW5jZSBTZXJ2ZXIgQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC2
+4C/CJAbIbQRf1+8KZAayfSImZRauQkCbztyfn3YHPsMwVYcZuU+UDlqUH1VWtMIC
+Kq/QmO4LQNfE0DtyyBSe75CxEamu0si4QzrZCwvV1ZX1QK/IHe1NnF9Xt4ZQaJn1
+itrSxwUfqJfJ3KSxgoQtxq2lnMcZgqaFD15EWCo3j/018QsIJzJa9buLnqS9UdAn
+4t07QjOjBSjEuyjMmqwrIw14xnvmXnG3Sj4I+4G3FhahnSMSTeXXkgisdaScus0X
+sh5ENWV/UyU50RwKmmMbGZJ0aAo3wsJSSMs5WqK24V3B3aAguCGikyZvFEohQcft
+bZvySC/zA/WiaJJTL17jAgMBAAGjggFJMIIBRTASBgNVHRMBAf8ECDAGAQH/AgEA
+MA4GA1UdDwEB/wQEAwIBhjAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIw
+NAYIKwYBBQUHAQEEKDAmMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2Vy
+dC5jb20wSwYDVR0fBEQwQjBAoD6gPIY6aHR0cDovL2NybDQuZGlnaWNlcnQuY29t
+L0RpZ2lDZXJ0SGlnaEFzc3VyYW5jZUVWUm9vdENBLmNybDA9BgNVHSAENjA0MDIG
+BFUdIAAwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93d3cuZGlnaWNlcnQuY29tL0NQ
+UzAdBgNVHQ4EFgQUUWj/kK8CB3U8zNllZGKiErhZcjswHwYDVR0jBBgwFoAUsT7D
+aQP4v0cB1JgmGggC72NkK8MwDQYJKoZIhvcNAQELBQADggEBABiKlYkD5m3fXPwd
+aOpKj4PWUS+Na0QWnqxj9dJubISZi6qBcYRb7TROsLd5kinMLYBq8I4g4Xmk/gNH
+E+r1hspZcX30BJZr01lYPf7TMSVcGDiEo+afgv2MW5gxTs14nhr9hctJqvIni5ly
+/D6q1UEL2tU2ob8cbkdJf17ZSHwD2f2LSaCYJkJA69aSEaRkCldUxPUd1gJea6zu
+xICaEnL6VpPX/78whQYwvwt/Tv9XBZ0k7YXDK/umdaisLRbvfXknsuvCnQsH6qqF
+0wGjIChBWUMo0oHjqvbsezt3tkBigAVBRQHvFwY+3sAzm2fTYS5yh+Rp/BIAV0Ae
+cPUeybQ=
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=C=US, ST=California, L=Menlo Park, O=Meta Platforms, Inc., CN=*.atlassolutions.com
+issuer=C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 2762 bytes and written 524 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_CHACHA20_POLY1305_SHA256
+Server public key is 2048 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+
+---------- READABLE FORMAT ----------
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            0c:11:df:f1:14:ec:58:d0:af:a9:b9:3e:66:5e:64:58
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA
+        Validity
+            Not Before: Aug 11 00:00:00 2024 GMT
+            Not After : Nov  9 23:59:59 2024 GMT
+        Subject: C=US, ST=California, L=Menlo Park, O=Meta Platforms, Inc., CN=*.atlassolutions.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:e6:d9:44:23:39:9d:88:d4:78:76:5d:59:bf:b8:
+                    5b:36:97:5c:f0:77:6d:86:a6:26:0f:d1:a0:53:c5:
+                    5f:ae:96:4d:00:f4:7a:a7:31:49:7a:4c:11:12:d4:
+                    53:16:c9:f6:57:f1:21:72:58:4a:cb:d3:fd:59:ce:
+                    8f:c4:98:93:32:c6:3a:6f:f3:48:cd:56:44:1a:e5:
+                    2a:72:d3:83:ac:4f:c4:7e:dd:24:67:c3:5a:ba:26:
+                    2f:4a:1c:98:3b:c8:ea:84:3b:e8:77:a2:7f:62:dd:
+                    ee:78:28:7e:ed:24:b7:03:e5:41:33:82:01:39:93:
+                    75:6b:5f:13:6a:3a:49:b2:97:d9:e8:13:07:ad:65:
+                    1f:32:e2:72:a6:e4:e2:fe:b5:0e:bb:5b:27:12:a5:
+                    74:38:34:ad:f1:8e:a2:78:a6:98:35:47:f5:4c:93:
+                    26:9c:b3:d7:4b:c8:29:5c:42:0d:34:a9:80:6f:fa:
+                    71:3b:b4:30:e1:e7:d7:38:bd:a7:cb:ed:b5:9d:90:
+                    0e:a4:69:be:98:64:0f:b7:34:3e:1c:92:4b:19:e6:
+                    ef:51:5c:4a:05:4c:3c:e2:49:4a:b1:f8:67:c1:c5:
+                    9e:4c:9d:86:ae:70:6c:44:09:df:7f:2a:c5:d2:b1:
+                    7f:b6:2c:50:47:8f:48:df:90:60:89:93:e2:90:a9:
+                    39:a5
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                51:68:FF:90:AF:02:07:75:3C:CC:D9:65:64:62:A2:12:B8:59:72:3B
+            X509v3 Subject Key Identifier: 
+                2A:69:35:6B:05:DF:AE:D7:D0:1A:01:DA:B8:45:75:1C:98:3A:77:65
+            X509v3 Subject Alternative Name: 
+                DNS:*.atlassolutions.com, DNS:*.atdmt.com, DNS:*.atdmt2.com, DNS:*.atlassbx.com, DNS:*.xx.atlassbx.com, DNS:atdmt.com, DNS:atdmt2.com, DNS:atlassbx.com, DNS:atlassolutions.com, DNS:xx.atlassbx.com
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.2
+                  CPS: http://www.digicert.com/CPS
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://crl3.digicert.com/sha2-ha-server-g6.crl
+                Full Name:
+                  URI:http://crl4.digicert.com/sha2-ha-server-g6.crl
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.digicert.com
+                CA Issuers - URI:http://cacerts.digicert.com/DigiCertSHA2HighAssuranceServerCA.crt
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            CT Precertificate SCTs: 
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : EE:CD:D0:64:D5:DB:1A:CE:C5:5C:B7:9D:B4:CD:13:A2:
+                                32:87:46:7C:BC:EC:DE:C3:51:48:59:46:71:1F:B5:9B
+                    Timestamp : Aug 11 00:20:53.304 2024 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:46:02:21:00:B3:D5:B5:95:B4:EC:C0:DD:8F:C9:D0:
+                                B1:8C:81:A0:EB:DE:B5:96:31:DA:1E:4B:48:EB:F5:93:
+                                35:D7:E7:53:1E:02:21:00:9C:0A:94:4B:26:1F:84:F3:
+                                63:AA:9B:72:D8:E2:EA:64:3C:07:01:B2:75:67:89:7A:
+                                60:2A:E1:47:0C:9C:9F:45
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : DA:B6:BF:6B:3F:B5:B6:22:9F:9B:C2:BB:5C:6B:E8:70:
+                                91:71:6C:BB:51:84:85:34:BD:A4:3D:30:48:D7:FB:AB
+                    Timestamp : Aug 11 00:20:53.526 2024 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:46:02:21:00:FF:7F:90:EF:CB:2A:50:AA:72:C6:17:
+                                2B:96:4A:E5:53:4C:6C:59:42:AA:EE:01:56:86:C5:C8:
+                                3E:D0:11:2D:0D:02:21:00:D0:B7:26:2E:90:01:67:B9:
+                                C8:6B:66:A3:1A:67:C7:EB:96:D2:26:87:2A:D2:D1:3D:
+                                90:AB:23:D9:4F:5D:5E:7C
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:
+                                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74
+                    Timestamp : Aug 11 00:20:53.361 2024 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:45:02:21:00:D7:3A:6E:05:BB:65:A3:F3:35:20:B0:
+                                47:4F:D3:A3:A6:53:DE:5A:51:CF:84:EA:DF:6E:AE:50:
+                                86:79:A1:17:E4:02:20:77:B0:04:DE:6B:01:55:F3:B2:
+                                33:8A:38:12:CE:03:5A:44:27:C4:77:81:FF:EF:3F:85:
+                                53:F5:1A:10:70:5C:80
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        0d:1c:a1:2d:6a:47:83:2e:79:f1:34:ce:eb:7b:0c:be:69:3c:
+        27:21:71:05:af:b7:14:60:4d:fa:12:bb:90:d7:a4:44:4b:97:
+        14:6a:78:9a:46:f6:c7:99:1f:1a:a5:cb:2b:fd:51:97:35:7a:
+        fb:27:75:04:eb:06:34:58:5b:f0:3c:a5:fd:c4:0e:26:d5:2d:
+        de:4d:d1:c7:08:98:5a:29:8f:6c:7c:45:4d:77:04:af:ca:8a:
+        92:f8:c8:63:d2:d3:10:bd:05:a5:fa:eb:44:57:ef:e0:ef:1b:
+        7d:b0:e6:a5:85:59:b5:36:c8:12:5e:ba:6a:8f:41:72:17:16:
+        b4:55:f2:df:34:b9:b7:4d:6e:b1:d4:17:6f:40:36:93:dc:82:
+        f2:d5:bc:cf:c1:bc:1c:84:01:29:eb:8b:30:86:fa:33:67:81:
+        6f:ea:e1:3e:e0:cb:bb:6a:92:4c:91:90:43:d4:38:ea:1e:63:
+        4e:18:2a:3e:09:03:1d:87:d5:8f:20:c0:94:a0:c5:10:e0:55:
+        61:5f:90:80:82:41:1f:ec:52:c9:c3:08:30:6e:42:27:65:1a:
+        0e:d2:27:24:c6:5c:b9:a3:5c:b4:6d:ee:ad:29:14:aa:d9:53:
+        29:fc:1c:ea:39:36:86:98:d7:c4:9d:2c:ab:12:07:b8:e9:ab:
+        cf:96:f8:ea

@@ -1,0 +1,188 @@
+---------- ORIGINAL FORMAT ----------
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=ssl882170.cloudflaressl.com
+   i:C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO ECC Domain Validation Secure Server CA 2
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Apr  7 00:00:00 2020 GMT; NotAfter: Oct 14 23:59:59 2020 GMT
+-----BEGIN CERTIFICATE-----
+MIIEmjCCBEGgAwIBAgIRAJq3p4TdV9SQ9pYLbt3lg3gwCgYIKoZIzj0EAwIwgZIx
+CzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAOBgNV
+BAcTB1NhbGZvcmQxGjAYBgNVBAoTEUNPTU9ETyBDQSBMaW1pdGVkMTgwNgYDVQQD
+Ey9DT01PRE8gRUNDIERvbWFpbiBWYWxpZGF0aW9uIFNlY3VyZSBTZXJ2ZXIgQ0Eg
+MjAeFw0yMDA0MDcwMDAwMDBaFw0yMDEwMTQyMzU5NTlaMCYxJDAiBgNVBAMTG3Nz
+bDg4MjE3MC5jbG91ZGZsYXJlc3NsLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEH
+A0IABCyF+OLLLzNcI9Y9r0pcofu0YtafVYjgmozBkOO+hXHLNGI15igaDtmu4IKm
+q7ZQu1liHCO0H972xuIeiujChzqjggLhMIIC3TAfBgNVHSMEGDAWgBRACWFn8LyD
+cU/eEggsb9TUK3Y9ljAdBgNVHQ4EFgQUrP+EXXErjsjEXTXxDZk/AU1YoqYwDgYD
+VR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEG
+CCsGAQUFBwMCMEkGA1UdIARCMEAwNAYLKwYBBAGyMQECAgcwJTAjBggrBgEFBQcC
+ARYXaHR0cHM6Ly9zZWN0aWdvLmNvbS9DUFMwCAYGZ4EMAQIBMFYGA1UdHwRPME0w
+S6BJoEeGRWh0dHA6Ly9jcmwuY29tb2RvY2E0LmNvbS9DT01PRE9FQ0NEb21haW5W
+YWxpZGF0aW9uU2VjdXJlU2VydmVyQ0EyLmNybDCBiAYIKwYBBQUHAQEEfDB6MFEG
+CCsGAQUFBzAChkVodHRwOi8vY3J0LmNvbW9kb2NhNC5jb20vQ09NT0RPRUNDRG9t
+YWluVmFsaWRhdGlvblNlY3VyZVNlcnZlckNBMi5jcnQwJQYIKwYBBQUHMAGGGWh0
+dHA6Ly9vY3NwLmNvbW9kb2NhNC5jb20wggEGBgorBgEEAdZ5AgQCBIH3BIH0APIA
+dwAHt1wb5X1o//Gwxh0jFce65ld8V5S3au68YToaadOiHAAAAXFU0ahgAAAEAwBI
+MEYCIQCROu5OK9booneXBQOkK5Ka20wdFxDSRtZ7EOLJcEbR8AIhANEZcVUqdvXn
+j4JcqwkLenLD9Mk/lomdomZ55mpmXdDCAHcA5xLysDd+GmL7jskMYYTx6ns3y1Yd
+ESZb8+DzS/JBVG4AAAFxVNGojwAABAMASDBGAiEA43pAcs5WzfY5gh2qU9KbtJbH
+HQIA9opwopVeRvEsk20CIQCKqO3y6HyK3tyJPa1RIzt4gVPjhJNtjdlZou89Hh4V
+EjAmBgNVHREEHzAdghtzc2w4ODIxNzAuY2xvdWRmbGFyZXNzbC5jb20wCgYIKoZI
+zj0EAwIDRwAwRAIgdIELsyW0oZDksptFliJVRvv98gwziCdgl7+rchIFv+8CIBfq
+Gi9B1Bc69xnhqM4ljRoQb6Vr9kG+RG40bprk8Ev2
+-----END CERTIFICATE-----
+ 1 s:C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO ECC Domain Validation Secure Server CA 2
+   i:C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO ECC Certification Authority
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA384
+   v:NotBefore: Sep 25 00:00:00 2014 GMT; NotAfter: Sep 24 23:59:59 2029 GMT
+-----BEGIN CERTIFICATE-----
+MIIDnzCCAyWgAwIBAgIQWyXOaQfEJlVm0zkMmalUrTAKBggqhkjOPQQDAzCBhTEL
+MAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UE
+BxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxKzApBgNVBAMT
+IkNPTU9ETyBFQ0MgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMTQwOTI1MDAw
+MDAwWhcNMjkwOTI0MjM1OTU5WjCBkjELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdy
+ZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09N
+T0RPIENBIExpbWl0ZWQxODA2BgNVBAMTL0NPTU9ETyBFQ0MgRG9tYWluIFZhbGlk
+YXRpb24gU2VjdXJlIFNlcnZlciBDQSAyMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcD
+QgAEAjgZgTrJaYRwWQKOqIofMN+83gP8eR06JSxrQSEYgur5PkrkM8wSzypD/A7y
+ZADA4SVQgiTNtkk4DyVHkUikraOCAWYwggFiMB8GA1UdIwQYMBaAFHVxpxlIGbyd
+nepBR9+UxEh3mdN5MB0GA1UdDgQWBBRACWFn8LyDcU/eEggsb9TUK3Y9ljAOBgNV
+HQ8BAf8EBAMCAYYwEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHSUEFjAUBggrBgEF
+BQcDAQYIKwYBBQUHAwIwGwYDVR0gBBQwEjAGBgRVHSAAMAgGBmeBDAECATBMBgNV
+HR8ERTBDMEGgP6A9hjtodHRwOi8vY3JsLmNvbW9kb2NhLmNvbS9DT01PRE9FQ0ND
+ZXJ0aWZpY2F0aW9uQXV0aG9yaXR5LmNybDByBggrBgEFBQcBAQRmMGQwOwYIKwYB
+BQUHMAKGL2h0dHA6Ly9jcnQuY29tb2RvY2EuY29tL0NPTU9ET0VDQ0FkZFRydXN0
+Q0EuY3J0MCUGCCsGAQUFBzABhhlodHRwOi8vb2NzcC5jb21vZG9jYTQuY29tMAoG
+CCqGSM49BAMDA2gAMGUCMQCsaEclgBNPE1bAojcJl1pQxOfttGHLKIoKETKm4nHf
+EQGJbwd6IGZrGNC5LkP3Um8CMBKFfI4TZpIEuppFCZRKMGHRSdxv6+ctyYnPHmp8
+7IXOMCVZuoFwNLg0f+cB0eLLUg==
+-----END CERTIFICATE-----
+ 2 s:C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO ECC Certification Authority
+   i:C=SE, O=AddTrust AB, OU=AddTrust External TTP Network, CN=AddTrust External CA Root
+   a:PKEY: id-ecPublicKey, 384 (bit); sigalg: RSA-SHA384
+   v:NotBefore: May 30 10:48:38 2000 GMT; NotAfter: May 30 10:48:38 2020 GMT
+-----BEGIN CERTIFICATE-----
+MIID0DCCArigAwIBAgIQQ1ICP/qokB8Tn+P05cFETjANBgkqhkiG9w0BAQwFADBv
+MQswCQYDVQQGEwJTRTEUMBIGA1UEChMLQWRkVHJ1c3QgQUIxJjAkBgNVBAsTHUFk
+ZFRydXN0IEV4dGVybmFsIFRUUCBOZXR3b3JrMSIwIAYDVQQDExlBZGRUcnVzdCBF
+eHRlcm5hbCBDQSBSb290MB4XDTAwMDUzMDEwNDgzOFoXDTIwMDUzMDEwNDgzOFow
+gYUxCzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAO
+BgNVBAcTB1NhbGZvcmQxGjAYBgNVBAoTEUNPTU9ETyBDQSBMaW1pdGVkMSswKQYD
+VQQDEyJDT01PRE8gRUNDIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MHYwEAYHKoZI
+zj0CAQYFK4EEACIDYgAEA0d7L3XJghWF+3XkkRbUq2KZ9T5SCwbOQQB/l+EKJDwd
+AQTuPdKNCZcM4HXk+vt3iir1A2BLNosWIxatCXH0SvQoULT+iBxuP2wvLwlZW6Vb
+CzOZ4sM9iflqLO+y0wbpo4H+MIH7MB8GA1UdIwQYMBaAFK29mHo0tCb3+sQmVO8D
+veAky1QaMB0GA1UdDgQWBBR1cacZSBm8nZ3qQUfflMRId5nTeTAOBgNVHQ8BAf8E
+BAMCAYYwDwYDVR0TAQH/BAUwAwEB/zARBgNVHSAECjAIMAYGBFUdIAAwSQYDVR0f
+BEIwQDA+oDygOoY4aHR0cDovL2NybC50cnVzdC1wcm92aWRlci5jb20vQWRkVHJ1
+c3RFeHRlcm5hbENBUm9vdC5jcmwwOgYIKwYBBQUHAQEELjAsMCoGCCsGAQUFBzAB
+hh5odHRwOi8vb2NzcC50cnVzdC1wcm92aWRlci5jb20wDQYJKoZIhvcNAQEMBQAD
+ggEBAB3H+i5AtlwFSw+8VTYBWOBTBT1k+6zZpTi4pyE7r5VbvkjI00PUIWxB7Qkt
+nHMAcZyuIXN+/46NuY5YkI78jG12yAA6nyCmLX3MF/3NmJYyCRrJZfwE67SaCnjl
+lztSjxLCdJcBns/hbWjYk7mcJPuWJ0gBnOqUP3CYQbNzUTcp6PYBerknuCRR2RFo
+1KaFpzanpZa6gPim/a5thCCuNXZzQg+HCezF3OeTAyIal+6ailFhp5cmHunudVEI
+kAWvL54TnJM/ev/m6+loeYyv4Lb67psSE/5FjNJ80zXrIRKT/mZ1JioVhCb3ZsnL
+jbsJQdQYr7GzEPUQyp2aDrV1aug=
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=CN=ssl882170.cloudflaressl.com
+issuer=C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO ECC Domain Validation Secure Server CA 2
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 3412 bytes and written 542 bytes
+Verification error: certificate has expired
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 256 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 10 (certificate has expired)
+---
+
+---------- READABLE FORMAT ----------
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            9a:b7:a7:84:dd:57:d4:90:f6:96:0b:6e:dd:e5:83:78
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO ECC Domain Validation Secure Server CA 2
+        Validity
+            Not Before: Apr  7 00:00:00 2020 GMT
+            Not After : Oct 14 23:59:59 2020 GMT
+        Subject: CN=ssl882170.cloudflaressl.com
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:2c:85:f8:e2:cb:2f:33:5c:23:d6:3d:af:4a:5c:
+                    a1:fb:b4:62:d6:9f:55:88:e0:9a:8c:c1:90:e3:be:
+                    85:71:cb:34:62:35:e6:28:1a:0e:d9:ae:e0:82:a6:
+                    ab:b6:50:bb:59:62:1c:23:b4:1f:de:f6:c6:e2:1e:
+                    8a:e8:c2:87:3a
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                40:09:61:67:F0:BC:83:71:4F:DE:12:08:2C:6F:D4:D4:2B:76:3D:96
+            X509v3 Subject Key Identifier: 
+                AC:FF:84:5D:71:2B:8E:C8:C4:5D:35:F1:0D:99:3F:01:4D:58:A2:A6
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Certificate Policies: 
+                Policy: 1.3.6.1.4.1.6449.1.2.2.7
+                  CPS: https://sectigo.com/CPS
+                Policy: 2.23.140.1.2.1
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://crl.comodoca4.com/COMODOECCDomainValidationSecureServerCA2.crl
+            Authority Information Access: 
+                CA Issuers - URI:http://crt.comodoca4.com/COMODOECCDomainValidationSecureServerCA2.crt
+                OCSP - URI:http://ocsp.comodoca4.com
+            CT Precertificate SCTs: 
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : 07:B7:5C:1B:E5:7D:68:FF:F1:B0:C6:1D:23:15:C7:BA:
+                                E6:57:7C:57:94:B7:6A:EE:BC:61:3A:1A:69:D3:A2:1C
+                    Timestamp : Apr  7 13:25:58.496 2020 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:46:02:21:00:91:3A:EE:4E:2B:D6:E8:A2:77:97:05:
+                                03:A4:2B:92:9A:DB:4C:1D:17:10:D2:46:D6:7B:10:E2:
+                                C9:70:46:D1:F0:02:21:00:D1:19:71:55:2A:76:F5:E7:
+                                8F:82:5C:AB:09:0B:7A:72:C3:F4:C9:3F:96:89:9D:A2:
+                                66:79:E6:6A:66:5D:D0:C2
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : E7:12:F2:B0:37:7E:1A:62:FB:8E:C9:0C:61:84:F1:EA:
+                                7B:37:CB:56:1D:11:26:5B:F3:E0:F3:4B:F2:41:54:6E
+                    Timestamp : Apr  7 13:25:58.543 2020 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:46:02:21:00:E3:7A:40:72:CE:56:CD:F6:39:82:1D:
+                                AA:53:D2:9B:B4:96:C7:1D:02:00:F6:8A:70:A2:95:5E:
+                                46:F1:2C:93:6D:02:21:00:8A:A8:ED:F2:E8:7C:8A:DE:
+                                DC:89:3D:AD:51:23:3B:78:81:53:E3:84:93:6D:8D:D9:
+                                59:A2:EF:3D:1E:1E:15:12
+            X509v3 Subject Alternative Name: 
+                DNS:ssl882170.cloudflaressl.com
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:44:02:20:74:81:0b:b3:25:b4:a1:90:e4:b2:9b:45:96:22:
+        55:46:fb:fd:f2:0c:33:88:27:60:97:bf:ab:72:12:05:bf:ef:
+        02:20:17:ea:1a:2f:41:d4:17:3a:f7:19:e1:a8:ce:25:8d:1a:
+        10:6f:a5:6b:f6:41:be:44:6e:34:6e:9a:e4:f0:4b:f6
