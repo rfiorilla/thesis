@@ -13,7 +13,7 @@ def input(dmns):
 		for row in r_in:
 			dmns.append(row[1])
 
-def bad_resolutions(dmns):
+def test_resolutions(dmns):
 	with open("output_bad.csv", "w") as f_out:
 		csv.writer(f_out).writerow(["Domain", "IP Address"])
 		cnt = 0
@@ -72,16 +72,12 @@ def certificate_check(mism_resol):
 					subject = stdout.decode().splitlines()[3].split("CN")[-1].lstrip("=")
 				except IndexError:
 					flag = 1
-				#print(san.stdout)
-				#print("-------------------------------------------------------")
 				if flag == 0:
 					if stdout.decode().find("Verification: OK") != -1:
 						if san.stdout.find(row[0]) == -1 and san.stdout.find('.'.join(row[0].split('.')[-2:])) == -1 and subject.find(row[0]) == -1 and subject.find('.'.join(row[0].split('.')[-2:])) == -1:
 							csv.writer(f_out).writerow([row[0], "N", "Y", subject])
 							mism += 1
 							suspicious = 1
-							#print(san)
-							#print("----------------------------------------------------")
 					else:
 						if san.stdout.find(row[0]) == -1 and san.stdout.find('.'.join(row[0].split('.')[-2:])) == -1 and subject.find(row[0]) == -1 and subject.find('.'.join(row[0].split('.')[-2:])) == -1:
 							csv.writer(f_out).writerow([row[0], "Y", "Y", subject])
@@ -159,16 +155,16 @@ def curler(certs):
 	print(f"\t{curled} pages retrieved.")
 
 def main():
-	#print(f"\tCreating a list of untrusted resolutions...")
-	#domains = []
-	#input(domains)
-	#bad_resolutions(domains)
-	#print(f"\tList of untrusted resolutions created -> ./output_bad.csv")
-	#print(f"\tComparing good and bad resolutions...")
-	#mismatched_resolutions = comparison()
-	#print(f"\tList of mismatched resolutions created -> ./mismatched_resolutions.csv")
+	print(f"\tCreating a list of untrusted resolutions...")
+	domains = []
+	input(domains)
+	bad_resolutions(domains)
+	print(f"\tList of untrusted resolutions created -> ./output_bad.csv")
+	print(f"\tComparing good and bad resolutions...")
+	mismatched_resolutions = comparison()
+	print(f"\tList of mismatched resolutions created -> ./mismatched_resolutions.csv")
 	print(f"\tAnalyzing the certificates of websites with mismatched resolutions...")
-	suspicious_certificates = certificate_check(812)
+	suspicious_certificates = certificate_check(mismatched_resolutions)
 	print(f"\tList of suspicious certificates created -> ./certificates.csv")
 	print(f"\tObtaining web pages of suspicious websites...")
 	curler(suspicious_certificates)
