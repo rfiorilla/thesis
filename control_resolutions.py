@@ -12,7 +12,7 @@ def input(dmns):
 			dmns.append(row[1])
 
 def output(dmns):
-	with open("output_good.csv", "w") as f_out:
+	with open("output_control.csv", "w") as f_out:
 		csv.writer(f_out).writerow(['Domain', 'IP Address'])
 		cnt = 0
 		for d in dmns:
