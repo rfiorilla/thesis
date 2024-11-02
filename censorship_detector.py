@@ -14,7 +14,7 @@ def input(dmns):
 			dmns.append(row[1])
 
 def test_resolutions(dmns):
-	with open("output_bad.csv", "w") as f_out:
+	with open("output_test.csv", "w") as f_out:
 		csv.writer(f_out).writerow(["Domain", "IP Address"])
 		cnt = 0
 		for d in dmns:
@@ -32,7 +32,7 @@ def test_resolutions(dmns):
 		print(f"\tCompleted: 100.00%")
 
 def comparison():
-	with open("output_good.csv", "r") as f_good, open("output_bad.csv", "r") as f_bad, open("mismatched_resolutions.csv", "w") as f_mism:
+	with open("output_control.csv", "r") as f_good, open("output_test.csv", "r") as f_bad, open("mismatched_resolutions.csv", "w") as f_mism:
 		r_good = csv.reader(f_good)
 		r_bad = csv.reader(f_bad)
 		csv.writer(f_mism).writerow(["Domain", "Control IP Address", "Test IP Address"])
@@ -158,7 +158,7 @@ def main():
 	print(f"\tCreating a list of untrusted resolutions...")
 	domains = []
 	input(domains)
-	bad_resolutions(domains)
+	test_resolutions(domains)
 	print(f"\tList of untrusted resolutions created -> ./output_bad.csv")
 	print(f"\tComparing good and bad resolutions...")
 	mismatched_resolutions = comparison()
