@@ -12,7 +12,7 @@ To execute the tool in the correct way:
 
 * Set the machine's DNS resolver to a trusted one (this can be done on Linux by modifying the `/etc/resolv.conf` file, removing or commenting the nameserver currently in use, and adding the desired one, e.g., `nameserver 8.8.8.8`). 
 
-* Run `good_resolutions.py`.
+* Run `control_resolutions.py`.
 
 * Set the machine's DNS resolver to the suspicious one to be analyzed (in the same manner described before).
 

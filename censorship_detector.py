@@ -160,7 +160,7 @@ def main():
 	input(domains)
 	test_resolutions(domains)
 	print(f"\tList of untrusted resolutions created -> ./output_bad.csv")
-	print(f"\tComparing good and bad resolutions...")
+	print(f"\tComparing trsuted and untrusted resolutions...")
 	mismatched_resolutions = comparison()
 	print(f"\tList of mismatched resolutions created -> ./mismatched_resolutions.csv")
 	print(f"\tAnalyzing the certificates of websites with mismatched resolutions...")
