@@ -159,7 +159,7 @@ def main():
 	domains = []
 	input(domains)
 	test_resolutions(domains)
-	print(f"\tList of untrusted resolutions created -> ./output_bad.csv")
+	print(f"\tList of untrusted resolutions created -> ./output_test.csv")
 	print(f"\tComparing trsuted and untrusted resolutions...")
 	mismatched_resolutions = comparison()
 	print(f"\tList of mismatched resolutions created -> ./mismatched_resolutions.csv")

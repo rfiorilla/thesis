@@ -34,7 +34,7 @@ def main():
 	input(domains)
 	output(domains)
 	print(f"\tCompleted: 100.00%")
-	print(f"\tList of trusted resolutions created -> ./output_good.csv")
+	print(f"\tList of trusted resolutions created -> ./output_control.csv")
 
 if __name__ == "__main__":
     	main()
