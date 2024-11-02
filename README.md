@@ -28,7 +28,7 @@ To execute the tool in the correct way:
 
 * `mismatched_resolutions.csv` contains the list of mismatched resolutions obtained by comparing the trusted and the untrusted ones.
 
-* * `mozilla_trusted_ca_certificates.crt` contains a [list of trusted CA certificates](https://ccadb.my.salesforce-sites.com/mozilla/IncludedCACertificateReport) provided by Mozilla.
+* `mozilla_trusted_ca_certificates.crt` contains a [list of trusted CA certificates](https://ccadb.my.salesforce-sites.com/mozilla/IncludedCACertificateReport) provided by Mozilla.
 
 * `certificates.csv` is generated after analyzing the certificates of the domains with suspicious (mismatched) resolutions, and it contains some information about their certificates, such as their validity, the eventual mismatch between the domain name and the name on the certificate, and the subject of the certificate itself.
 
