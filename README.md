@@ -40,4 +40,4 @@ To execute the tool in the correct way:
 
 * `/webpages` is a directory filled with the HTMLs of the retrieved webpages, with the purpose of visually verifying whether a specific domain was actually hidden by means of a blockpage or not.
 
-![diagram](/img/diagram_nobg.png)
+![diagram](/img/D_dark.png)
